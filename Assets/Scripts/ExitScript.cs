@@ -16,10 +16,10 @@ public class ExitScript : MonoBehaviour
     void Update()
     {
         //simple "Press esc key" then exit program - so as not to use task manager to end program
-        if (Input.GetKeyDown(KeyCode.Escape))
+        /*if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
-        }
+        }*/
     }
 
 }
