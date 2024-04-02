@@ -3569,6 +3569,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: global
+      value: 
+      objectReference: {fileID: 1726803411}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: TextHint
       value: 
       objectReference: {fileID: 2134282577}
@@ -4761,6 +4766,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: global
+      value: 
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
@@ -8257,6 +8267,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: global
+      value: 
+      objectReference: {fileID: 1726803411}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: TextHint
       value: 
       objectReference: {fileID: 2134282577}
@@ -8342,6 +8357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726803410}
   - component: {fileID: 1726803409}
+  - component: {fileID: 1726803411}
   m_Layer: 0
   m_Name: ScriptHolder
   m_TagString: Untagged
@@ -8375,6 +8391,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726803411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726803408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f265b063963c6f4eae184775ce7b855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueCounter: 0
 --- !u!1 &1727486851
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,13 +12,15 @@ public class DialogueTriggerScript : MonoBehaviour
     public GameObject DialoguePanel;
     public Text DialogueText;
 
-    public int dialogueCount = 0;
+    //public int dialogueCount = 0;
     public bool inDialogue = false;
+
+    public Global global;
 
     // Start is called before the first frame update
     void Start()
     {
-        dialogueCount = 0;
+        global.DialogueCounter = 0;
         inDialogue = false;
         DialoguePanel.SetActive(false);
         DialogueText.text = "";
@@ -60,17 +62,17 @@ public class DialogueTriggerScript : MonoBehaviour
     void EnterDialogue()
     {
         inDialogue = true;
-        dialogueCount++;
+        global.DialogueCounter++;
         DialoguePanel.SetActive(true);
-        if(dialogueCount == 1)
+        if(global.DialogueCounter == 1)
         {
             DialogueText.text = "I'm a bit busy. Playing a new game I got today!!! Talk to you tommorow though?";
         }
-        else if (dialogueCount == 2)
+        else if (global.DialogueCounter == 2)
         {
             DialogueText.text = "Hey, can't come out now. This new game is SOOOO addictive!";
         }
-        else if (dialogueCount == 3)
+        else if (global.DialogueCounter == 3)
         {
             DialogueText.text = "(I can hear mouse clicks from the room - They must be ignoring me.)";
         }
