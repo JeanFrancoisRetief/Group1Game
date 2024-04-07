@@ -10,7 +10,9 @@ public class CharacterController2D : MonoBehaviour
     Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
+    public Vector2 lastMotionVector;
     Animator animator;
+    public bool moving;
 
     void Awake()    
     {
@@ -20,12 +22,29 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        float Horizontal = Input.GetAxisRaw("Horizontal");
+        float Vertical = Input.GetAxisRaw("Vertical");
+
         motionVector = new Vector2(
-            Input.GetAxisRaw("Horizontal"), 
-            Input.GetAxisRaw("Vertical")
+            Horizontal,
+            Vertical
             );
-        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
+        animator.SetFloat("Horizontal", Horizontal);
+        animator.SetFloat("Vertical", Vertical);
+
+        moving = Horizontal != 0 || Vertical != 0;
+        animator.SetBool("Moving", moving);
+
+        if (Horizontal !=0 || Vertical != 0)
+        {
+            lastMotionVector = new Vector2(
+                Horizontal,
+                Vertical
+                ).normalized;
+
+            animator.SetFloat("LastHorizontal", Horizontal);
+            animator.SetFloat("LastVertical", Vertical);
+        }
     }
 
     void FixedUpdate()
