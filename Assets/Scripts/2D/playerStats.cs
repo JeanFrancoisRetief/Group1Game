@@ -16,10 +16,6 @@ public class playerStats : MonoBehaviour
     public int coins;
     public Text coinsTxt;
 
-    //requests pending
-    public int reqPending;
-    public Text reqPendingTxt;
-
     //crop stats
     public int wheatAmt;
     public int cornAmt;
@@ -32,7 +28,6 @@ public class playerStats : MonoBehaviour
         xp = 0;
         xpLimit = 10;
         coins = 0;
-        reqPending = 0;
     }
 
     // Update is called once per frame
@@ -52,10 +47,5 @@ public class playerStats : MonoBehaviour
 
             lvl = lvl + 1;
         }
-    }
-
-    public void Selected()
-    {
-        reqPending = reqPending + 1;
     }
 }
