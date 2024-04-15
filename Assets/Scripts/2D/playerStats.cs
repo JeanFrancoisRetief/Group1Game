@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class playerStats : MonoBehaviour
 {
+    //player stats
     public int lvl;
     public Text lvlTxt;
     public int xp;
@@ -15,8 +16,14 @@ public class playerStats : MonoBehaviour
     public int coins;
     public Text coinsTxt;
 
+    //requests pending
     public int reqPending;
     public Text reqPendingTxt;
+
+    //crop stats
+    public int wheatAmt;
+    public int cornAmt;
+    public int riceAmt;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +39,7 @@ public class playerStats : MonoBehaviour
     void Update()
     {
         sldXP.value = xp;
+        sldXP.maxValue = xpLimit;
         lvlTxt.text = "Lvl: " + lvl;
 
         coinsTxt.text = "Coins: " + coins;
