@@ -174,19 +174,19 @@ public class crops : MonoBehaviour
     {
         if (wheatSelected ==  true)
         {
-            yieldWheat = playerStats.wheatAmt + yieldWheat;
+            playerStats.wheatAmt = playerStats.wheatAmt + yieldWheat;
             wheatSelected = false;
         }
 
         if (cornSelected == true)
         {
-            yieldCorn = playerStats.cornAmt + yieldCorn;
+            playerStats.cornAmt = playerStats.cornAmt + yieldCorn;
             cornSelected = false;
         }
 
         if (riceSelected == true)
         {
-            yieldRice = playerStats.riceAmt + yieldRice;
+            playerStats.riceAmt = playerStats.riceAmt + yieldRice;
             riceSelected = false;
         }
     }

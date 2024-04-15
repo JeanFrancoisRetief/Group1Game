@@ -21,6 +21,8 @@ public class request : MonoBehaviour
     public GameObject selectBtn;
     public GameObject sendBtn;
 
+    public int pay;
+
     private void Start()
     {
         selectBtn.SetActive(true);
@@ -29,19 +31,21 @@ public class request : MonoBehaviour
 
     public void Send()
     {
+        playerStats.coins = playerStats.coins + pay; //adds the money earned from request to the total coins
+
         if (playerStats.wheatAmt >= wheatReq) //checks to see if the player has enough of the resource
         {
-            playerStats.wheatAmt = playerStats.wheatAmt - 1; //subtracts once the resources are sent to requester
+            playerStats.wheatAmt = playerStats.wheatAmt - wheatReq; //subtracts once the resources are sent to requester
         }
 
         if (playerStats.cornAmt >= cornReq)
         {
-            playerStats.cornAmt = playerStats.cornAmt - 1;
+            playerStats.cornAmt = playerStats.cornAmt - cornReq;
         }
 
         if (playerStats.riceAmt >= riceReq)
         {
-            playerStats.riceAmt = playerStats.riceAmt - 1;
+            playerStats.riceAmt = playerStats.riceAmt - riceReq;
         }
 
         this.gameObject.SetActive(false); //deletes the game object as the request is now complete
