@@ -14,6 +14,9 @@ public class DialogueTriggerScript : MonoBehaviour
 
     //public int dialogueCount = 0;
     public bool inDialogue = false;
+    public string Dialogue01;
+    public string Dialogue02;
+    public string Dialogue03;
 
     public Global global;
 
@@ -66,15 +69,18 @@ public class DialogueTriggerScript : MonoBehaviour
         DialoguePanel.SetActive(true);
         if(global.DialogueCounter == 1)
         {
-            DialogueText.text = "I'm a bit busy. Playing a new game I got today!!! Talk to you tommorow though?";
+            DialogueText.text = Dialogue01;
+            //"I'm a bit busy. Playing a new game I got today!!! Talk to you tommorow though?";
         }
         else if (global.DialogueCounter == 2)
         {
-            DialogueText.text = "Hey, can't come out now. This new game is SOOOO addictive!";
+            DialogueText.text = Dialogue02;
+            // "Hey, can't come out now. This new game is SOOOO addictive!";
         }
         else if (global.DialogueCounter == 3)
         {
-            DialogueText.text = "(I can hear mouse clicks from the room - They must be ignoring me.)";
+            DialogueText.text = Dialogue03;
+            // "(I can hear mouse clicks from the room - They must be ignoring me.)";
         }
         else
         {

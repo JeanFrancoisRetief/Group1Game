@@ -139,3 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c82b50823b5f7947a5ee59f20eaf857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextHint: {fileID: 0}
+  DialoguePanel: {fileID: 0}
+  DialogueText: {fileID: 0}
+  inDialogue: 0
+  Dialogue01: I'm a bit busy. Playing a new game I got today!!! Talk to you tommorow
+    though?
+  Dialogue02: Hey, can't come out now. This new game is SOOOO addictive!
+  Dialogue03: (I can hear mouse clicks from the room - They must be ignoring me.)
+  global: {fileID: 0}
