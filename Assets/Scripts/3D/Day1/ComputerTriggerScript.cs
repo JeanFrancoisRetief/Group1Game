@@ -8,10 +8,14 @@ using UnityEngine.InputSystem;
 public class ComputerTriggerScript : MonoBehaviour
 {
     public Text TextHint;
+
+    public Scene CurrentScene;
+
     // Start is called before the first frame update
     void Start()
     {
         TextHint.text = "";
+        CurrentScene = SceneManager.GetActiveScene();
     }
 
     // Update is called once per frame
@@ -44,6 +48,26 @@ public class ComputerTriggerScript : MonoBehaviour
     {
         //Debug.Log("Open Computer 2");
         //TextHint.text = "Computer";
+        if(CurrentScene.name == "3D_Day1")
+        {
+            SceneManager.LoadScene("3D_Day2");//for testing purposes
+        }
+
+        if (CurrentScene.name == "3D_Day2")
+        {
+            SceneManager.LoadScene("3D_Day3");
+        }
+
+        if (CurrentScene.name == "3D_Day3")
+        {
+            SceneManager.LoadScene("3D_Day4");
+        }
+
+        if (CurrentScene.name == "3D_Day4")
+        {
+            SceneManager.LoadScene("3D_Day5");
+        }
+
     }
 
 }

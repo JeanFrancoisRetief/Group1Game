@@ -7,11 +7,13 @@ public class StartMessage : MonoBehaviour
 {
     public Text StartText;
     public Color zm;  //  makes a new color zm
+    public string startMessage;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartText.text = "Monday 10:23 AM";
+        //StartText.text = "Monday 10:23 AM";
+        StartText.text = startMessage;
         zm = StartText.color;
         zm.a = 255f;
         

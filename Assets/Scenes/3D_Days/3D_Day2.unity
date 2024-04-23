@@ -2347,7 +2347,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.45
+      value: -12.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
@@ -2357,7 +2357,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.46
+      value: 31.76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
@@ -3190,7 +3190,7 @@ PrefabInstance:
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
-      value: It's too early to go to sleep, besides I have that new game to play!
+      value: No sleep for me. Only game.
       objectReference: {fileID: 0}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
@@ -3678,13 +3678,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499375713}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6611971, y: -0.53152776, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.13860427, w: 0.99034786}
+  m_LocalPosition: {x: 1.6611971, y: -0.352, z: 0}
   m_LocalScale: {x: 1.6426, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1589694235}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15.934}
 --- !u!65 &499375715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4032,7 +4032,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.49
+      value: -6.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
@@ -4042,12 +4042,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.92
+      value: 30.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9822519
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
@@ -4057,7 +4057,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.18756671
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
@@ -4072,7 +4072,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -21.622
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c9d62490d4d0b841bd952f09e6f4598,
         type: 3}
@@ -4924,7 +4924,7 @@ Transform:
   - {fileID: 1735755132}
   - {fileID: 1453921550}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &737162334
 GameObject:
@@ -5040,6 +5040,21 @@ PrefabInstance:
       objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: Dialogue01
+      value: Can't talk right now... Playing the game... leave me to it, please.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue02
+      value: Shhh, I'm trying to hear the grass grow!
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue03
+      value: Go away, I'm busy. This game ain't gonna play itself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: DialogueText
       value: 
       objectReference: {fileID: 1778437858}
@@ -5051,7 +5066,7 @@ PrefabInstance:
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
@@ -6460,7 +6475,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.06
+      value: -18.82
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
@@ -6470,7 +6485,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 23.78
+      value: 19.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
@@ -6647,6 +6662,21 @@ PrefabInstance:
       objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: Dialogue01
+      value: Can't talk right now... Playing the game... leave me to it, please.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue02
+      value: Shhh, I'm trying to hear the grass grow!
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue03
+      value: Go away, I'm busy. This game ain't gonna play itself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: DialogueText
       value: 
       objectReference: {fileID: 1778437858}
@@ -6658,7 +6688,7 @@ PrefabInstance:
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
@@ -8937,7 +8967,7 @@ PrefabInstance:
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
-      value: Hmmmmm....
+      value: Books are boring. That game though, everyone was right - it's so fun!
       objectReference: {fileID: 0}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
@@ -9233,7 +9263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372622419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5217317, y: -0.22777699, z: 0}
+  m_LocalPosition: {x: -1.5217317, y: 1.3, z: 0}
   m_LocalScale: {x: 1, y: 1.9163, z: 1}
   m_Children: []
   m_Father: {fileID: 1589694235}
@@ -11534,6 +11564,21 @@ PrefabInstance:
       objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: Dialogue01
+      value: Can't talk right now... Playing the game... leave me to it, please.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue02
+      value: Shhh, I'm trying to hear the grass grow!
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue03
+      value: Go away, I'm busy. This game ain't gonna play itself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: DialogueText
       value: 
       objectReference: {fileID: 1778437858}
@@ -11634,7 +11679,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.8
+      value: -3.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
@@ -11644,27 +11689,27 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.81
+      value: 35.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.8441897
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0.5360446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
@@ -11674,7 +11719,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -64.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bfbf0baddf2a5c4baf29f2014371670,
         type: 3}
@@ -11760,7 +11805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartText: {fileID: 1165626406}
   zm: {r: 0, g: 0, b: 0, a: 0}
-  startMessage: Monday 10:23 AM
+  startMessage: Tuesday 09:03 AM
 --- !u!1 &1727486851
 GameObject:
   m_ObjectHideFlags: 0
@@ -12307,7 +12352,7 @@ PrefabInstance:
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
-      value: This is my favourite game!
+      value: The poster fell down, should probably fix it. Later.
       objectReference: {fileID: 0}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
@@ -13369,7 +13414,7 @@ PrefabInstance:
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
-      value: I like to keep this bathroom tidy.
+      value: Tidy enough.
       objectReference: {fileID: 0}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
@@ -14557,7 +14602,7 @@ PrefabInstance:
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
-      value: Posters on my wall, I love these animations!
+      value: Not as good as the game currently playing.
       objectReference: {fileID: 0}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
@@ -14646,7 +14691,7 @@ PrefabInstance:
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
-      value: My little kitchen, a little neat as always.
+      value: A little less neat than usual.
       objectReference: {fileID: 0}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
@@ -15551,7 +15596,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &60889539378096550
 PrefabInstance:

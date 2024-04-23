@@ -4924,7 +4924,7 @@ Transform:
   - {fileID: 1735755132}
   - {fileID: 1453921550}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &737162334
 GameObject:
@@ -5040,6 +5040,18 @@ PrefabInstance:
       objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: Dialogue02
+      value: Hey, can't come out now. This new game is SOOOO addictive! You should
+        really try it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue03
+      value: Sorry can't come to the door right now. Can't stop playing this game.
+        It's very good.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: DialogueText
       value: 
       objectReference: {fileID: 1778437858}
@@ -5051,7 +5063,7 @@ PrefabInstance:
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
@@ -6647,6 +6659,18 @@ PrefabInstance:
       objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: Dialogue02
+      value: Hey, can't come out now. This new game is SOOOO addictive! You should
+        really try it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue03
+      value: Sorry can't come to the door right now. Can't stop playing this game.
+        It's very good.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: DialogueText
       value: 
       objectReference: {fileID: 1778437858}
@@ -6658,7 +6682,7 @@ PrefabInstance:
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
@@ -11534,6 +11558,18 @@ PrefabInstance:
       objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
+      propertyPath: Dialogue02
+      value: Hey, can't come out now. This new game is SOOOO addictive! You should
+        really try it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
+      propertyPath: Dialogue03
+      value: Sorry can't come to the door right now. Can't stop playing this game.
+        It's very good.
+      objectReference: {fileID: 0}
+    - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
+        type: 3}
       propertyPath: DialogueText
       value: 
       objectReference: {fileID: 1778437858}
@@ -15551,7 +15587,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &60889539378096550
 PrefabInstance:
