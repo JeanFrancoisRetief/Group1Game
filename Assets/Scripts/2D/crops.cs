@@ -65,7 +65,12 @@ public class crops : MonoBehaviour
 
     public int cost;
 
+    public GameObject btnCrop1;
     public GameObject harvestBtn;
+    public GameObject NotEnoughCoins;
+
+    //panels
+    public GameObject pnlCrop1;
 
     #endregion
 
@@ -124,6 +129,7 @@ public class crops : MonoBehaviour
         {
             timeToGrow = 0;
 
+            //timerTxt.text = "Ready!";
             harvestBtn.SetActive(true);
         }
         int minutes = Mathf.FloorToInt(timeToGrow / 60);
@@ -133,41 +139,66 @@ public class crops : MonoBehaviour
 
     public void growWheat()
     {
-        cropPlotName = wheatName;
-        timeToGrow = timeToGrowWheat;
-        cost = costWheat;
+        if (playerStats.coins >= costWheat)
+        {
+            cropPlotName = wheatName;
+            timeToGrow = timeToGrowWheat;
+            cost = costWheat;
 
-        playerStats.coins = playerStats.coins - cost;
+            playerStats.coins = playerStats.coins - cost;
 
-        cropPlotNameTxt.text = cropPlotName;
+            cropPlotNameTxt.text = cropPlotName;
+            pnlCrop1.SetActive(false);
+            //btnCrop1.GetComponent<Button>() = false;
 
-        wheatSelected = true;
+            wheatSelected = true;
+        }
+        else
+        {
+            NotEnoughCoins.SetActive(true);
+        }
     }
 
     public void growCorn()
     {
-        cropPlotName = cornName;
-        timeToGrow = timeToGrowCorn;
-        cost = costCorn;
+        if (playerStats.coins >= costCorn)
+        {
+            cropPlotName = cornName;
+            timeToGrow = timeToGrowCorn;
+            cost = costCorn;
 
-        playerStats.coins = playerStats.coins - cost;
+            playerStats.coins = playerStats.coins - cost;
 
-        cropPlotNameTxt.text = cropPlotName;
+            cropPlotNameTxt.text = cropPlotName;
+            pnlCrop1.SetActive(false);
 
-        cornSelected = true;
+            cornSelected = true;
+        }
+        else
+        {
+            NotEnoughCoins.SetActive(true);
+        }
     }
 
     public void growRice()
     {
-        cropPlotName = riceName;
-        timeToGrow = timeToGrowRice;
-        cost = costRice;
+        if (playerStats.coins >= costRice)
+        {
+            cropPlotName = riceName;
+            timeToGrow = timeToGrowRice;
+            cost = costRice;
 
-        playerStats.coins = playerStats.coins - cost;
+            playerStats.coins = playerStats.coins - cost;
 
-        cropPlotNameTxt.text = cropPlotName;
+            cropPlotNameTxt.text = cropPlotName;
+            pnlCrop1.SetActive(false);
 
-        riceSelected = true;
+            riceSelected = true;
+        }
+        else
+        {
+            NotEnoughCoins.SetActive(true);
+        }
     }
 
     public void Harvest()
@@ -176,18 +207,21 @@ public class crops : MonoBehaviour
         {
             playerStats.wheatAmt = playerStats.wheatAmt + yieldWheat;
             wheatSelected = false;
+            harvestBtn.SetActive(false);
         }
 
         if (cornSelected == true)
         {
             playerStats.cornAmt = playerStats.cornAmt + yieldCorn;
             cornSelected = false;
+            harvestBtn.SetActive(false);
         }
 
         if (riceSelected == true)
         {
             playerStats.riceAmt = playerStats.riceAmt + yieldRice;
             riceSelected = false;
+            harvestBtn.SetActive(false);
         }
     }
 }

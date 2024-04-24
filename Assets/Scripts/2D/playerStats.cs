@@ -27,7 +27,7 @@ public class playerStats : MonoBehaviour
         lvl = 0;
         xp = 0;
         xpLimit = 10;
-        coins = 0;
+        coins = 10;
     }
 
     // Update is called once per frame
