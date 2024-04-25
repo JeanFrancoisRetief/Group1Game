@@ -15,11 +15,21 @@ public class playerStats : MonoBehaviour
     public Slider sldXP;
     public int coins;
     public Text coinsTxt;
+    public float time;
+    public Text timeTxt;
+    public int day;
+    public Text dayTxt;
 
     //crop stats
     public int wheatAmt;
+    public Text wheatAmtTxt;
     public int cornAmt;
+    public Text cornAmtTxt;
     public int riceAmt;
+    public Text riceAmtTxt;
+
+    //stats menu
+    public GameObject statsMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +38,16 @@ public class playerStats : MonoBehaviour
         xp = 0;
         xpLimit = 10;
         coins = 10;
+        day = 1;
+        time = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
+        dayTxt.text = "Day: " + day;
+        timeTxt.text = "Time: " + time;
+
         sldXP.value = xp;
         sldXP.maxValue = xpLimit;
         lvlTxt.text = "Lvl: " + lvl;
@@ -46,6 +61,31 @@ public class playerStats : MonoBehaviour
             xpLimit = xpLimit * 2;
 
             lvl = lvl + 1;
+        }
+
+        wheatAmtTxt.text = "Wheat: " + wheatAmt;
+        cornAmtTxt.text = "Corn: " + cornAmt;
+        riceAmtTxt.text = "Rice: " + riceAmt;
+
+        //time of day
+        //if (time > 0)
+        //{
+        //    time += Time.deltaTime;
+        //}
+        //else if (time < 0)
+        //{
+        //    time = 0;
+        //}
+        //int minutes = Mathf.FloorToInt(time / 60);
+        //int seconds = Mathf.FloorToInt(time % 60);
+        //timeTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void statsMenuDropDown()
+    {
+        if (statsMenu == false)
+        {
+            statsMenu.SetActive(true);
         }
     }
 }
