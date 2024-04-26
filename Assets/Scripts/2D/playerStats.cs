@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class playerStats : MonoBehaviour
 {
-    //player stats
+    [Header("Player Stats")]
     public int lvl;
     public Text lvlTxt;
     public int xp;
@@ -20,7 +20,7 @@ public class playerStats : MonoBehaviour
     public int day;
     public Text dayTxt;
 
-    //crop stats
+    [Header("Crop Stats")]
     public int wheatAmt;
     public Text wheatAmtTxt;
     public int cornAmt;
@@ -28,8 +28,11 @@ public class playerStats : MonoBehaviour
     public int riceAmt;
     public Text riceAmtTxt;
 
-    //stats menu
     public GameObject statsMenu;
+
+    [Header("Requests")]
+    public int reqPending;
+    public Text reqPendingTxt;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +43,7 @@ public class playerStats : MonoBehaviour
         coins = 10;
         day = 1;
         time = 1;
+        reqPending = 0;
     }
 
     // Update is called once per frame
@@ -66,6 +70,8 @@ public class playerStats : MonoBehaviour
         wheatAmtTxt.text = "Wheat: " + wheatAmt;
         cornAmtTxt.text = "Corn: " + cornAmt;
         riceAmtTxt.text = "Rice: " + riceAmt;
+
+        reqPendingTxt.text = "Req Pending: " + reqPending;
 
         //time of day
         //if (time > 0)

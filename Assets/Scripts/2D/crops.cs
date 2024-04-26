@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class crops : MonoBehaviour
 {
@@ -78,6 +79,9 @@ public class crops : MonoBehaviour
     {
         harvestBtn.SetActive(false);
 
+        //crop plot
+        cropPlotNameTxt.text = "Empty Crop Plot";
+
         //wheat
         wheatName = "Wheat";
         wheatNameTxt.text = wheatName;
@@ -89,7 +93,7 @@ public class crops : MonoBehaviour
         costWheatTxt.text = "Cost: " + costWheat;
 
         yieldWheat = 10;
-        yieldWheatTxt.text = "Yield: " + wheatName;
+        yieldWheatTxt.text = "Yield: " + yieldWheat + " " + wheatName;
 
         //corn
         cornName = "Corn";
@@ -102,7 +106,7 @@ public class crops : MonoBehaviour
         costCornTxt.text = "Cost: " + costCorn;
 
         yieldCorn = 10;
-        timeToGrowCornTxt.text = timeToGrowCorn + cornName;
+        yieldCornTxt.text = "Yield: " +  yieldCorn + " " + cornName;
 
         //rice
         riceName = "Rice";
@@ -115,7 +119,7 @@ public class crops : MonoBehaviour
         costRiceTxt.text = "Cost: " + costRice;
 
         yieldRice = 10;
-        yieldRiceTxt.text = "Yield: " + riceName;
+        yieldRiceTxt.text = "Yield: " + yieldRice + " " + riceName;
     }
 
     private void Update()
@@ -129,7 +133,6 @@ public class crops : MonoBehaviour
         {
             timeToGrow = 0;
 
-            //timerTxt.text = "Ready!";
             harvestBtn.SetActive(true);
         }
         int minutes = Mathf.FloorToInt(timeToGrow / 60);
@@ -149,7 +152,7 @@ public class crops : MonoBehaviour
 
             cropPlotNameTxt.text = cropPlotName;
             pnlCrop1.SetActive(false);
-            //btnCrop1.GetComponent<Button>() = false;
+            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = false;
 
             wheatSelected = true;
         }
@@ -171,6 +174,7 @@ public class crops : MonoBehaviour
 
             cropPlotNameTxt.text = cropPlotName;
             pnlCrop1.SetActive(false);
+            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = false;
 
             cornSelected = true;
         }
@@ -192,6 +196,7 @@ public class crops : MonoBehaviour
 
             cropPlotNameTxt.text = cropPlotName;
             pnlCrop1.SetActive(false);
+            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = false;
 
             riceSelected = true;
         }
@@ -223,5 +228,8 @@ public class crops : MonoBehaviour
             riceSelected = false;
             harvestBtn.SetActive(false);
         }
+
+        cropPlotNameTxt.text = "Empty Crop Plot";
+        btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
     }
 }
