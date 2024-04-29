@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.MPE;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,13 +23,24 @@ public class playerStats : MonoBehaviour
 
     [Header("Crop Stats")]
     public int wheatAmt;
+    public int maxWheatAmt;
     public Text wheatAmtTxt;
     public int cornAmt;
+    public int maxCornAmt;
     public Text cornAmtTxt;
     public int riceAmt;
+    public int maxRiceAmt;
     public Text riceAmtTxt;
 
     public GameObject statsMenu;
+
+    [Header("Chickens")]
+    public int chickenAmt;
+    public int maxChickenAmt;
+    public Text chickenAmtTxt;
+    public int eggsAmt;
+    public int maxEggsAmt;
+    public Text eggsAmtTxt;
 
     [Header("Requests")]
     public int reqPending;
@@ -67,9 +79,14 @@ public class playerStats : MonoBehaviour
             lvl = lvl + 1;
         }
 
-        wheatAmtTxt.text = "Wheat: " + wheatAmt;
-        cornAmtTxt.text = "Corn: " + cornAmt;
-        riceAmtTxt.text = "Rice: " + riceAmt;
+        //crops
+        wheatAmtTxt.text = "Wheat: " + wheatAmt + "/" + maxWheatAmt;
+        cornAmtTxt.text = "Corn: " + cornAmt + "/" + maxCornAmt;
+        riceAmtTxt.text = "Rice: " + riceAmt + "/" + maxRiceAmt;
+
+        //animals
+        chickenAmtTxt.text = "Chickens: " + chickenAmt + "/" + maxChickenAmt;
+        eggsAmtTxt.text = "Eggs: " + eggsAmt + "/" + maxEggsAmt;
 
         reqPendingTxt.text = "Req Pending: " + reqPending;
 
