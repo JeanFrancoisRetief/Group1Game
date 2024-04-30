@@ -5,23 +5,24 @@ using UnityEngine.UI;
 
 public class chickens : MonoBehaviour
 {
+    [Header("Misc")]
     public playerStats playerStats;
+    public GameObject collectBtn;
+    public GameObject notEnoughCoins;
+
+    [Header("Main")]
+    public int eggsLaid;
+    public Text chickenAmtTxt;
+    public Text eggsAmtTxt;
     public float timeToLay;
     public float actualTimeToLay;
-    public GameObject collectBtn;
 
+    [Header("Upgrades")]
     public int chickenUpCost;
     public Text chickenUpCostTxt;
-    public int eggsLaid;
-
     public Text chickenUp1;
     public Text chickenUp2;
     public Text chickenUp3;
-
-    public Text chickenAmtTxt;
-    public Text eggsAmtTxt;
-
-    public GameObject notEnoughCoins;
 
     // Start is called before the first frame update
     void Start()
