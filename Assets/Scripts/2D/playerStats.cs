@@ -52,13 +52,18 @@ public class playerStats : MonoBehaviour
     public Text milkBottlesTxt;
 
     [Header("Upgrades")]
-    public GameObject btnSilo;
+    public GameObject greySilo;
+    public GameObject Silo;
     public GameObject btnBuySilo;
+    public GameObject btnUpgradeSilo;
     public int lvlToUnlockSilo;
     public int siloPrice;
     public int siloBenefit;
     public int siloUpgradePrice;
     public int siloUpgradeAmount;
+    public Text txtSiloRequiredLvl;
+    public Text txtBuySilo;
+    public Text txtSiloUpgrade;
 
     [Header("Requests")]
     public int reqPending;
@@ -76,8 +81,10 @@ public class playerStats : MonoBehaviour
         reqPending = 0;
 
         //silo
-        btnSilo.SetActive(false);
-        btnBuySilo.SetActive(false);
+        greySilo.SetActive(true);
+        Silo.SetActive(false);
+        btnBuySilo.SetActive(true);
+        btnUpgradeSilo.SetActive(false);
         siloBenefit = 10;
     }
 
@@ -129,11 +136,10 @@ public class playerStats : MonoBehaviour
         //int seconds = Mathf.FloorToInt(time % 60);
         //timeTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        if (lvlToUnlockSilo >= lvl)
-        {
-            btnSilo.SetActive(true);
-            btnBuySilo.SetActive(true);
-        }
+        //silo
+        txtSiloRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockSilo;
+        txtBuySilo.text = "Buy Silo " + siloPrice + " Coins";
+        txtSiloUpgrade.text = "Coins: " + siloUpgradePrice;
     }
 
     public void StatsMenuDropDown()
@@ -146,8 +152,13 @@ public class playerStats : MonoBehaviour
 
     public void BuySilo()
     {
-        if (coins >= siloPrice)
+        if (coins >= siloPrice && lvl >= lvlToUnlockSilo)
         {
+            Silo.SetActive(true);
+            btnUpgradeSilo.SetActive(true);
+            btnBuySilo.SetActive(false);
+            greySilo.SetActive(false);
+
             coins = coins - siloPrice;
             maxWheatAmt = maxWheatAmt + siloBenefit;
             maxCornAmt = maxCornAmt + siloBenefit;
