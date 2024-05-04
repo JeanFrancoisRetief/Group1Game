@@ -29,7 +29,7 @@ public class chickens : MonoBehaviour
     {
         playerStats.chickenAmt = 1;
         playerStats.maxChickenAmt = 2;
-        playerStats.eggsAmt = 0;
+        playerStats.eggsAmt = 1;
         playerStats.maxEggsAmt = 5;
         eggsLaid = 1;
         chickenUpCost = 25;

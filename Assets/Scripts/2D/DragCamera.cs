@@ -7,7 +7,6 @@ public class DragCamera : MonoBehaviour
     public float dragSpeed = 2;
     private Vector3 dragOrigin;
 
-
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -23,6 +22,4 @@ public class DragCamera : MonoBehaviour
 
         transform.Translate(move, Space.World);
     }
-
-
 }

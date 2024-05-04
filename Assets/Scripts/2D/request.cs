@@ -12,6 +12,10 @@ public class request : MonoBehaviour
     public int wheatReq;
     public int cornReq;
     public int riceReq;
+    public int chickensReq;
+    public int eggsReq;
+    public int cowsReq;
+    public int milkReq;
 
     public GameObject selectBtn;
     public GameObject sendBtn;
@@ -28,7 +32,7 @@ public class request : MonoBehaviour
 
     public void Send()
     {
-        if (playerStats.wheatAmt >= wheatReq && playerStats.cornAmt >= cornReq && playerStats.riceAmt >= riceReq) //checks to see if the player has enough of the resource
+        if (playerStats.wheatAmt >= wheatReq && playerStats.cornAmt >= cornReq && playerStats.riceAmt >= riceReq && playerStats.chickenAmt >= chickensReq && playerStats.eggsAmt >= eggsReq && playerStats.cowAmt >= cowsReq && playerStats.milkBottlesAmt >= milkReq) //checks to see if the player has enough of the resource
         {
             playerStats.coins = playerStats.coins + pay; //adds the money earned from request to the total coins
             playerStats.reqPending = playerStats.reqPending - 1; //removes one request because it was completed
@@ -36,6 +40,10 @@ public class request : MonoBehaviour
             playerStats.wheatAmt = playerStats.wheatAmt - wheatReq; //subtracts once the resources are sent to requester
             playerStats.cornAmt = playerStats.cornAmt - cornReq;
             playerStats.riceAmt = playerStats.riceAmt - riceReq;
+            playerStats.chickenAmt = playerStats.chickenAmt - chickensReq;
+            playerStats.eggsAmt = playerStats.eggsAmt - eggsReq;
+            playerStats.cowAmt = playerStats.cowAmt - cowsReq;
+            playerStats.milkBottlesAmt = playerStats.milkBottlesAmt - milkReq;
 
             this.gameObject.SetActive(false); //deletes the game object as the request is now complete
         }
