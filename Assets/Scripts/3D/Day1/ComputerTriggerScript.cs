@@ -11,6 +11,8 @@ public class ComputerTriggerScript : MonoBehaviour
 
     public Scene CurrentScene;
 
+    public Global globalScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,24 +50,28 @@ public class ComputerTriggerScript : MonoBehaviour
     {
         //Debug.Log("Open Computer 2");
         //TextHint.text = "Computer";
-        if(CurrentScene.name == "3D_Day1")
+        if (globalScript.DayCounter == 1/*CurrentScene.name == "3D_Day1"*/)
         {
-            SceneManager.LoadScene("3D_Day2");//for testing purposes
+            //SceneManager.LoadScene("3D_Day2");//for testing purposes
+            globalScript.SwitchDay1ToDay2();
         }
 
-        if (CurrentScene.name == "3D_Day2")
+        else if (globalScript.DayCounter == 2/*CurrentScene.name == "3D_Day2"*/)
         {
-            SceneManager.LoadScene("3D_Day3");
+            //SceneManager.LoadScene("3D_Day3");
+            globalScript.SwitchDay2ToDay3();
         }
 
-        if (CurrentScene.name == "3D_Day3")
+        else if (globalScript.DayCounter == 3/*CurrentScene.name == "3D_Day3"*/)
         {
-            SceneManager.LoadScene("3D_Day4");
+            //SceneManager.LoadScene("3D_Day4");
+            globalScript.SwitchDay3ToDay4();
         }
 
-        if (CurrentScene.name == "3D_Day4")
+        else if (globalScript.DayCounter == 4/*CurrentScene.name == "3D_Day4"*/)
         {
-            SceneManager.LoadScene("3D_Day5");
+            //SceneManager.LoadScene("3D_Day5");
+            globalScript.SwitchDay4ToDay5();
         }
 
     }

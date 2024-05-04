@@ -517,12 +517,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -542,12 +542,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -1877,12 +1877,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -1902,12 +1902,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -8006,7 +8006,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -8016,12 +8016,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -8564,7 +8564,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -8574,12 +8574,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -9763,12 +9763,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -9788,12 +9788,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -14441,7 +14441,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -14451,12 +14451,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -16551,6 +16551,11 @@ PrefabInstance:
       propertyPath: TextHint
       value: 
       objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: globalScript
+      value: 
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 2803592368865260628, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: m_RootOrder
@@ -17954,7 +17959,12 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: globalScript
+      value: 
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 2803592368865260628, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: m_RootOrder
@@ -18634,12 +18644,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -18659,12 +18669,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -18849,7 +18859,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -18859,12 +18869,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -20832,7 +20842,12 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: globalScript
+      value: 
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 2803592368865260628, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: m_RootOrder
@@ -25182,7 +25197,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -25192,12 +25207,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -27586,12 +27601,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -27611,12 +27626,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -31905,7 +31920,12 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: globalScript
+      value: 
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 2803592368865260628, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: m_RootOrder
@@ -38423,7 +38443,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -38433,12 +38453,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -41715,8 +41735,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548539522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9400005, y: 30, z: 14.4965}
-  m_LocalScale: {x: 0.4156726, y: 1, z: -1.3113347}
+  m_LocalPosition: {x: 4.1669, y: 30, z: 14.4965}
+  m_LocalScale: {x: 0.37028116, y: 1, z: -1.3113347}
   m_Children: []
   m_Father: {fileID: 2024064496}
   m_RootOrder: 54
@@ -41990,7 +42010,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -42000,12 +42020,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -44193,7 +44213,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -44203,12 +44223,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -44479,7 +44499,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -44489,12 +44509,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -45841,7 +45861,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -45851,12 +45871,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -45936,12 +45956,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -45961,12 +45981,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -46338,7 +46358,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -46348,12 +46368,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -46480,6 +46500,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueCounter: 0
+  DayCounter: 0
+  Envornment1: {fileID: 727354475}
+  Envornment2: {fileID: 2103282583}
+  Envornment3: {fileID: 665746150}
+  Envornment4: {fileID: 2024064495}
+  Envornment5: {fileID: 1511927212}
 --- !u!114 &1726803412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51164,12 +51190,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -51189,12 +51215,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -51659,12 +51685,12 @@ PrefabInstance:
         type: 3}
       propertyPath: global
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: Dialogue01
@@ -51684,12 +51710,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 361708795487664861, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: DialoguePanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: c15c9d2d4b720994dad5a4c41399b725,
         type: 3}
       propertyPath: m_RootOrder
@@ -52074,7 +52100,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -52084,12 +52110,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -53025,7 +53051,12 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: globalScript
+      value: 
+      objectReference: {fileID: 1726803411}
     - target: {fileID: 2803592368865260628, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: m_RootOrder
@@ -56939,7 +56970,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextHint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2134282577}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractString
@@ -56949,12 +56980,12 @@ PrefabInstance:
         type: 3}
       propertyPath: InteractionText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1778437858}
     - target: {fileID: 2552292276621957701, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: InteractionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 425921682}
     - target: {fileID: 2803592368865260628, guid: f23f7de6a0ecd8c4db148073267f84f4,
         type: 3}
       propertyPath: m_RootOrder
