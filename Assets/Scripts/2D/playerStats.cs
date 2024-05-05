@@ -483,7 +483,7 @@ public class playerStats : MonoBehaviour
 
     #endregion
 
-    #region Transport
+    #region Shop
 
     public void BuyShop()
     {
