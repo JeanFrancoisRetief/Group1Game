@@ -70,8 +70,14 @@ public class crops : MonoBehaviour
     public GameObject harvestBtn;
     public GameObject NotEnoughCoins;
 
-    //panels
+    [Header("Unlock")]
+    public bool isUnlocked;
+    public GameObject btnPurchaseCrop;
+    public Text txtCropPlotPrice;
+
+    //other
     public GameObject pnlCrop1;
+    public GameObject imgMaxCapacity;
 
     #endregion
 
@@ -80,7 +86,7 @@ public class crops : MonoBehaviour
         harvestBtn.SetActive(false);
 
         //crop plot
-        cropPlotNameTxt.text = "Empty Crop Plot";
+        cropPlotNameTxt.text = "Empty";
 
         //wheat
         wheatName = "Wheat";
@@ -95,6 +101,8 @@ public class crops : MonoBehaviour
         yieldWheat = 10;
         yieldWheatTxt.text = "Yield: " + yieldWheat + " " + wheatName;
 
+        playerStats.maxWheatAmt = 25;
+
         //corn
         cornName = "Corn";
         cornNameTxt.text = cornName;
@@ -108,6 +116,9 @@ public class crops : MonoBehaviour
         yieldCorn = 10;
         yieldCornTxt.text = "Yield: " +  yieldCorn + " " + cornName;
 
+        playerStats.maxCornAmt = 25;
+
+
         //rice
         riceName = "Rice";
         riceNameTxt.text = riceName;
@@ -120,6 +131,8 @@ public class crops : MonoBehaviour
 
         yieldRice = 10;
         yieldRiceTxt.text = "Yield: " + yieldRice + " " + riceName;
+
+        playerStats.maxRiceAmt = 25;
     }
 
     private void Update()
@@ -138,6 +151,37 @@ public class crops : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeToGrow / 60);
         int seconds = Mathf.FloorToInt(timeToGrow % 60);
         timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        //crop plot
+        txtCropPlotPrice.text = "Buy: " + playerStats.cropPrice + " Coins";
+
+        if (isUnlocked == true)
+        {
+            btnCrop1.GetComponent<UnityEngine.UI.Image>().color = Color.white;
+            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
+            btnPurchaseCrop.SetActive(false);
+        }
+        else
+        {
+            btnCrop1.GetComponent<UnityEngine.UI.Image>().color = Color.gray;
+            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            btnPurchaseCrop.SetActive(true);
+        }
+    }
+
+    public void buyCropPlot()
+    {
+        if (playerStats.coins >= playerStats.cropPrice)
+        {
+            playerStats.coins = playerStats.coins - playerStats.cropPrice;
+            isUnlocked = true;
+
+            playerStats.cropPrice = playerStats.cropPrice * 2;
+        }
+        else
+        {
+            playerStats.notEnoughCoins.SetActive(true);
+        }
     }
 
     public void growWheat()
@@ -208,28 +252,71 @@ public class crops : MonoBehaviour
 
     public void Harvest()
     {
-        if (wheatSelected ==  true)
+        if (playerStats.wheatAmt < playerStats.maxWheatAmt)
         {
-            playerStats.wheatAmt = playerStats.wheatAmt + yieldWheat;
-            wheatSelected = false;
-            harvestBtn.SetActive(false);
+            if (wheatSelected == true)
+            {
+                playerStats.wheatAmt = playerStats.wheatAmt + yieldWheat;
+                wheatSelected = false;
+                harvestBtn.SetActive(false);
+
+                if (playerStats.wheatAmt >= playerStats.maxWheatAmt)
+                {
+                    playerStats.wheatAmt = playerStats.maxWheatAmt;
+                }
+
+                cropPlotNameTxt.text = "Empty";
+                btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
+            }
+        }
+        else
+        {
+            imgMaxCapacity.SetActive(true);
         }
 
-        if (cornSelected == true)
+        if (playerStats.cornAmt < playerStats.maxCornAmt)
         {
-            playerStats.cornAmt = playerStats.cornAmt + yieldCorn;
-            cornSelected = false;
-            harvestBtn.SetActive(false);
+            if (cornSelected == true)
+            {
+                playerStats.cornAmt = playerStats.cornAmt + yieldCorn;
+                cornSelected = false;
+                harvestBtn.SetActive(false);
+
+                if (playerStats.cornAmt >= playerStats.maxCowAmt)
+                {
+                    playerStats.cornAmt = playerStats.maxCornAmt;
+                }
+
+                cropPlotNameTxt.text = "Empty";
+                btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
+            }
+        }
+        else
+        {
+            imgMaxCapacity.SetActive(true);
         }
 
-        if (riceSelected == true)
+        if (playerStats.riceAmt < playerStats.maxRiceAmt)
         {
-            playerStats.riceAmt = playerStats.riceAmt + yieldRice;
-            riceSelected = false;
-            harvestBtn.SetActive(false);
-        }
 
-        cropPlotNameTxt.text = "Empty Crop Plot";
-        btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
+            if (riceSelected == true)
+            {
+                playerStats.riceAmt = playerStats.riceAmt + yieldRice;
+                riceSelected = false;
+                harvestBtn.SetActive(false);
+
+                if (playerStats.riceAmt >= playerStats.maxRiceAmt)
+                {
+                    playerStats.riceAmt = playerStats.maxRiceAmt;
+                }
+
+                cropPlotNameTxt.text = "Empty";
+                btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
+            }
+        }
+        else
+        {
+            imgMaxCapacity.SetActive(true);
+        }
     }
 }
