@@ -110,6 +110,29 @@ public class playerStats : MonoBehaviour
     public int reqPending;
     public Text reqPendingTxt;
 
+    public GameObject greyTransport;
+    public GameObject transport;
+    public GameObject btnBuyTransport;
+    public GameObject btnUpgradeTransport;
+    public int lvlToUnlockTransport;
+    public int transportPrice;
+    public int transportBenefit;
+    public int transportUpgradePrice;
+    public int transportUpgradeAmount;
+    public Text txtTransportRequiredLvl;
+    public Text txtBuyTransport;
+    public Text txtTransportUpgrade;
+
+    [Header("Shop")]
+    public GameObject greyShop;
+    public GameObject shop;
+    public GameObject btnBuyShop;
+    public int lvlToUnlockShop;
+    public int shopPrice;
+    public Text txtShopRequiredLvl;
+    public Text txtBuyShop;
+    public farmShop farmShop;
+
     [Header("Misc")]
     public GameObject notEnoughCoins;
     public crops crops;
@@ -150,6 +173,19 @@ public class playerStats : MonoBehaviour
         objTimeCompostLasts.SetActive(false);
         compostBenefit = 10;
         compostTime = 10f;
+
+        //transport
+        greyTransport.SetActive(true);
+        transport.SetActive(false);
+        btnBuyTransport.SetActive(true);
+        btnUpgradeTransport.SetActive(false);
+        transportBenefit = 0;
+        transportUpgradeAmount = 5;
+
+        //shop
+        greyShop.SetActive(true);
+        shop.SetActive(false);
+        btnBuyShop.SetActive(true);
     }
 
     // Update is called once per frame
@@ -226,6 +262,15 @@ public class playerStats : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeCompostLasts / 60);
         int seconds = Mathf.FloorToInt(timeCompostLasts % 60);
         txtTimeCompostLasts.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        //transport
+        txtTransportRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockTransport;
+        txtBuyTransport.text = "Buy Transport Vehicle " + transportPrice + " Coins";
+        txtTransportUpgrade.text = "Coins: " + transportUpgradePrice;
+
+        //shop
+        txtShopRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockShop;
+        txtBuyShop.text = "Buy Shop " + shopPrice + " Coins";
     }
 
     public void StatsMenuDropDown()
@@ -395,6 +440,66 @@ public class playerStats : MonoBehaviour
         crops.timeToGrowCorn = crops.timeToGrowCorn + (crops.timeToGrowCorn / compostBenefit);
         crops.timeToGrowRice = crops.timeToGrowRice + (crops.timeToGrowRice  /compostBenefit);
         btnMakeCompost.SetActive(true);
+    }
+
+    #endregion
+
+    #region Transport
+
+    public void BuyTransport()
+    {
+        if (coins >= transportPrice && lvl >= lvlToUnlockTransport)
+        {
+            transport.SetActive(true);
+            btnUpgradeTransport.SetActive(true);
+            btnBuyTransport.SetActive(false);
+            greyTransport.SetActive(false);
+
+            coins = coins - transportPrice;
+
+            transportBenefit = transportBenefit + 5;
+        }
+        else
+        {
+            notEnoughCoins.SetActive(true);
+        }
+    }
+
+    public void upgradeTransport()
+    {
+        if (coins >= transportUpgradePrice)
+        {
+            coins = coins - transportUpgradePrice;
+            transportBenefit = transportBenefit + transportUpgradeAmount;
+
+            transportUpgradeAmount = transportUpgradeAmount + 5;
+            transportUpgradePrice = transportUpgradePrice * 2;
+        }
+        else
+        {
+            notEnoughCoins.SetActive(true);
+        }
+    }
+
+    #endregion
+
+    #region Transport
+
+    public void BuyShop()
+    {
+        if (coins >= shopPrice && lvl >= lvlToUnlockShop)
+        {
+            shop.SetActive(true);
+            btnBuyShop.SetActive(false);
+            greyShop.SetActive(false);
+
+            coins = coins - shopPrice;
+            farmShop.findRange = true;
+        }
+        else
+        {
+            notEnoughCoins.SetActive(true);
+        }
     }
 
     #endregion

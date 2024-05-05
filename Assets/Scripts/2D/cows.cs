@@ -24,6 +24,14 @@ public class cows : MonoBehaviour
     public int cowUpCost;
     public Text cowUpCostTxt;
 
+    [Header("Unlock")]
+    public int barnPrice;
+    public bool isUnlocked;
+    public GameObject btnPurchaseBarn;
+    public GameObject btnCows;
+    public GameObject btnUpgradeCows;
+    public Text txtBarnPrice;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +73,36 @@ public class cows : MonoBehaviour
 
         cowAmtTxt.text = playerStats.cowAmt.ToString();
         milkBottlesAmtTxt.text = playerStats.milkBottlesAmt.ToString();
+
+        //unlock
+        txtBarnPrice.text = "Buy " + barnPrice + " Coins";
+
+        if (isUnlocked == true)
+        {
+            btnCows.GetComponent<UnityEngine.UI.Image>().color = Color.white;
+            btnUpgradeCows.SetActive(true);
+            btnPurchaseBarn.SetActive(false);
+
+        }
+        else
+        {
+            btnCows.GetComponent<UnityEngine.UI.Image>().color = Color.gray;
+            btnUpgradeCows.SetActive(false);
+            btnPurchaseBarn.SetActive(true);
+        }
+    }
+
+    public void BuyBarn()
+    {
+        if (playerStats.coins >= barnPrice)
+        {
+            playerStats.coins = playerStats.coins - barnPrice;
+            isUnlocked = true;
+        }
+        else
+        {
+            playerStats.notEnoughCoins.SetActive(true);
+        }
     }
 
     public void BuyCows()

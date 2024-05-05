@@ -34,7 +34,7 @@ public class request : MonoBehaviour
     {
         if (playerStats.wheatAmt >= wheatReq && playerStats.cornAmt >= cornReq && playerStats.riceAmt >= riceReq && playerStats.chickenAmt >= chickensReq && playerStats.eggsAmt >= eggsReq && playerStats.cowAmt >= cowsReq && playerStats.milkBottlesAmt >= milkReq) //checks to see if the player has enough of the resource
         {
-            playerStats.coins = playerStats.coins + pay; //adds the money earned from request to the total coins
+            playerStats.coins = playerStats.coins + pay + (pay * (playerStats.transportBenefit * 100)); //adds the money earned from request to the total coins
             playerStats.reqPending = playerStats.reqPending - 1; //removes one request because it was completed
 
             playerStats.wheatAmt = playerStats.wheatAmt - wheatReq; //subtracts once the resources are sent to requester

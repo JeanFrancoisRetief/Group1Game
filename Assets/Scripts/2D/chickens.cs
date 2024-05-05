@@ -24,6 +24,14 @@ public class chickens : MonoBehaviour
     public Text chickenUp2;
     public Text chickenUp3;
 
+    [Header("Unlock")]
+    public int coopPrice;
+    public bool isUnlocked;
+    public GameObject btnPurchaseCoop;
+    public GameObject btnChickens;
+    public GameObject btnUpgradeChickens;
+    public Text txtCoopPrice;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +73,36 @@ public class chickens : MonoBehaviour
 
         chickenAmtTxt.text = playerStats.chickenAmt.ToString();
         eggsAmtTxt.text = playerStats.eggsAmt.ToString();
+
+        //unlock
+        txtCoopPrice.text = "Buy " + coopPrice + " Coins";
+
+        if (isUnlocked == true)
+        {
+            btnChickens.GetComponent<UnityEngine.UI.Image>().color = Color.white;
+            btnUpgradeChickens.SetActive(true);
+            btnPurchaseCoop.SetActive(false);
+
+        }
+        else
+        {
+            btnChickens.GetComponent<UnityEngine.UI.Image>().color = Color.gray;
+            btnUpgradeChickens.SetActive(false);
+            btnPurchaseCoop.SetActive(true);
+        }
+    }
+
+    public void BuyCoop()
+    {
+        if (playerStats.coins >= coopPrice)
+        {
+            playerStats.coins = playerStats.coins - coopPrice;
+            isUnlocked = true;
+        }
+        else
+        {
+            playerStats.notEnoughCoins.SetActive(true);
+        }
     }
 
     public void BuyChickens()
