@@ -13,6 +13,8 @@ public class ComputerTriggerScript : MonoBehaviour
 
     public Global globalScript;
 
+    public GameObject farm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,16 @@ public class ComputerTriggerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (farm)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,6 +65,9 @@ public class ComputerTriggerScript : MonoBehaviour
         {
             //SceneManager.LoadScene("3D_Day2");//for testing purposes
             globalScript.SwitchDay1ToDay2();
+
+            farm.SetActive(true);
+
         }
 
         else if (globalScript.DayCounter == 2/*CurrentScene.name == "3D_Day2"*/)
