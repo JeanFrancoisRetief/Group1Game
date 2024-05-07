@@ -24,7 +24,8 @@ public class Global : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(Cursor.lockState);
+        //Cursor.lockState = CursorLockMode.None;
     }
 
     public void SwitchDay1ToDay2()

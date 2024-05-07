@@ -25,7 +25,7 @@ public class ComputerTriggerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (farm)
+        if (!farm)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
