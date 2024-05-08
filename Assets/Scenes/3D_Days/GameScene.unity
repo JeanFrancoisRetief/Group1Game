@@ -18827,7 +18827,7 @@ MonoBehaviour:
   farmShop: {fileID: 1209764858}
   notEnoughCoins: {fileID: 1440260520}
   crops: {fileID: 1701275167}
-  global: {fileID: 0}
+  global: {fileID: 1726803411}
 --- !u!114 &401784139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28169,6 +28169,11 @@ PrefabInstance:
       objectReference: {fileID: 2134282577}
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
+      propertyPath: StartText
+      value: 
+      objectReference: {fileID: 1165626406}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
       propertyPath: globalScript
       value: 
       objectReference: {fileID: 1726803411}
@@ -29943,9 +29948,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
+      propertyPath: farm
+      value: 
+      objectReference: {fileID: 783499667}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 916186361}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
       propertyPath: TextHint
       value: 
       objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: StartText
+      value: 
+      objectReference: {fileID: 1165626406}
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: globalScript
@@ -34395,9 +34415,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
+      propertyPath: farm
+      value: 
+      objectReference: {fileID: 783499667}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 916186361}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
       propertyPath: TextHint
       value: 
       objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: StartText
+      value: 
+      objectReference: {fileID: 1165626406}
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: globalScript
@@ -53178,9 +53213,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
+      propertyPath: farm
+      value: 
+      objectReference: {fileID: 783499667}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 916186361}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
       propertyPath: TextHint
       value: 
       objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: StartText
+      value: 
+      objectReference: {fileID: 1165626406}
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: globalScript
@@ -86741,9 +86791,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
+      propertyPath: farm
+      value: 
+      objectReference: {fileID: 783499667}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 916186361}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
       propertyPath: TextHint
       value: 
       objectReference: {fileID: 2134282577}
+    - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
+        type: 3}
+      propertyPath: StartText
+      value: 
+      objectReference: {fileID: 1165626406}
     - target: {fileID: 2713467441093871860, guid: c38f44c0e830b1d42baccd33d3c33d0c,
         type: 3}
       propertyPath: globalScript
