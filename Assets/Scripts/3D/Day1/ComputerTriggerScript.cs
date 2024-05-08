@@ -45,12 +45,15 @@ public class ComputerTriggerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!farm)
+
+        Debug.Log(Cursor.lockState);
+
+        if (farm)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        else
+        else 
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
@@ -81,39 +84,46 @@ public class ComputerTriggerScript : MonoBehaviour
             if (globalScript.DayCounter == 2)
             {
                 StartText.text = "Tuesday 09:03 AM";
-                zm = StartText.color;
-                zm.a = 255f;
-
-                StartText.color = zm;
             }
 
             if (globalScript.DayCounter == 3)
             {
                 StartText.text = "Wednesday 07:12 AM";
-                zm = StartText.color;
-                zm.a = 255f;
-
-                StartText.color = zm;
             }
 
             if (globalScript.DayCounter == 4)
             {
                 StartText.text = "Thursday 17:16 PM";
-                zm = StartText.color;
-                zm.a = 255f;
-
-                StartText.color = zm;
             }
 
             if (globalScript.DayCounter == 5)
             {
                 StartText.text = "???";
-                zm = StartText.color;
-                zm.a = 255f;
-
-                StartText.color = zm;
             }
+
+            if (seconds == 60 * 3)
+            {
+                StartCoroutine(startText());
+            }
+
+            seconds = 0;
         }
+    }
+
+    public IEnumerator startText()
+    {
+        zm = StartText.color;
+        zm.a = 240f;
+
+        StartText.color = zm;
+        
+        StartText.enabled = true;
+
+        yield return new WaitForSeconds(4f);
+
+        zm.a = 0;
+
+        StartText.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
