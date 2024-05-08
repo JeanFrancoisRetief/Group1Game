@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using System.Xml.Serialization;
 
 public class ComputerTriggerScript : MonoBehaviour
 {
@@ -15,17 +16,36 @@ public class ComputerTriggerScript : MonoBehaviour
 
     public GameObject farm;
 
+    public GameObject player;
+
+    //time
+    public int frameCounter;
+    public int seconds;
+
+    //start message
+    public Text StartText;
+    public Color zm;  //  makes a new color zm
+
     // Start is called before the first frame update
     void Start()
     {
         TextHint.text = "";
         CurrentScene = SceneManager.GetActiveScene();
+
+        frameCounter = 0;
+        seconds = 0;
+
+        StartText.text = "Monday 10:23 AM";
+        zm = StartText.color;
+        zm.a = 255f;
+
+        StartText.color = zm;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (farm)
+        if (!farm)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -34,6 +54,65 @@ public class ComputerTriggerScript : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        }
+
+        //time
+        frameCounter++;
+        zm.a--;
+
+        if (zm.a <= 0)
+        {
+            zm.a = 0;
+        }
+
+        StartText.color = zm;
+
+        if (frameCounter >= 60 && farm)
+        {
+            seconds++;
+
+            frameCounter = 0;
+        }
+
+        if (seconds >= 60 * 3)
+        {
+            farm.SetActive(false);
+
+            if (globalScript.DayCounter == 2)
+            {
+                StartText.text = "Tuesday 09:03 AM";
+                zm = StartText.color;
+                zm.a = 255f;
+
+                StartText.color = zm;
+            }
+
+            if (globalScript.DayCounter == 3)
+            {
+                StartText.text = "Wednesday 07:12 AM";
+                zm = StartText.color;
+                zm.a = 255f;
+
+                StartText.color = zm;
+            }
+
+            if (globalScript.DayCounter == 4)
+            {
+                StartText.text = "Thursday 17:16 PM";
+                zm = StartText.color;
+                zm.a = 255f;
+
+                StartText.color = zm;
+            }
+
+            if (globalScript.DayCounter == 5)
+            {
+                StartText.text = "???";
+                zm = StartText.color;
+                zm.a = 255f;
+
+                StartText.color = zm;
+            }
         }
     }
 
@@ -48,7 +127,6 @@ public class ComputerTriggerScript : MonoBehaviour
         {
             TextHint.text = "";
             OpenComputer();
-            
         }
     }
 
@@ -68,24 +146,53 @@ public class ComputerTriggerScript : MonoBehaviour
 
             farm.SetActive(true);
 
+            player.SetActive(false);
+
+            player.transform.position = new Vector3 (0, 30.6f, -2.58f);
+
+            player.SetActive(true);
         }
 
         else if (globalScript.DayCounter == 2/*CurrentScene.name == "3D_Day2"*/)
         {
             //SceneManager.LoadScene("3D_Day3");
             globalScript.SwitchDay2ToDay3();
+
+            farm.SetActive(true);
+
+            player.SetActive(false);
+
+            player.transform.position = new Vector3(0, 30.6f, -2.58f);
+
+            player.SetActive(true);
         }
 
         else if (globalScript.DayCounter == 3/*CurrentScene.name == "3D_Day3"*/)
         {
             //SceneManager.LoadScene("3D_Day4");
             globalScript.SwitchDay3ToDay4();
+
+            farm.SetActive(true);
+
+            player.SetActive(false);
+
+            player.transform.position = new Vector3(0, 30.6f, -2.58f);
+
+            player.SetActive(true);
         }
 
         else if (globalScript.DayCounter == 4/*CurrentScene.name == "3D_Day4"*/)
         {
             //SceneManager.LoadScene("3D_Day5");
             globalScript.SwitchDay4ToDay5();
+
+            farm.SetActive(true);
+
+            player.SetActive(false);
+
+            player.transform.position = new Vector3(-7.74f, 30.11f, 20.56f);
+
+            player.SetActive(true);
         }
 
     }
