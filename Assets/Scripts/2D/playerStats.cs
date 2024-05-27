@@ -17,6 +17,8 @@ public class playerStats : MonoBehaviour
     public Slider sldXP;
     public int coins;
     public Text coinsTxt;
+    public int gems;
+    //public Text gemsTxt;
     public float time;
     public Text timeTxt;
     public int day;
