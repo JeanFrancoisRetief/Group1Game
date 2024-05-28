@@ -17049,6 +17049,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1341993519}
+  - {fileID: 1506179256}
   m_Father: {fileID: 2052945694}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25477,6 +25478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 512274039}
+  - component: {fileID: 512274040}
   m_Layer: 5
   m_Name: reward4
   m_TagString: Untagged
@@ -25507,6 +25509,23 @@ RectTransform:
   m_AnchoredPosition: {x: -661, y: -258}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &512274040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512274038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734f5c5b5ec90245addba048c8ff29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 401784138}
+  dailyRewards: {fileID: 401784141}
+  rewardNumber: 4
+  gemCost: 0
+  gemCostTxt: {fileID: 455784019}
 --- !u!1 &513116397
 GameObject:
   m_ObjectHideFlags: 0
@@ -52411,6 +52430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1086603667}
+  - component: {fileID: 1086603668}
   m_Layer: 5
   m_Name: reward3
   m_TagString: Untagged
@@ -52441,6 +52461,23 @@ RectTransform:
   m_AnchoredPosition: {x: 661, y: 264}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1086603668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086603666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734f5c5b5ec90245addba048c8ff29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 401784138}
+  dailyRewards: {fileID: 401784141}
+  rewardNumber: 3
+  gemCost: 0
+  gemCostTxt: {fileID: 1748145323}
 --- !u!1 &1091462307
 GameObject:
   m_ObjectHideFlags: 0
@@ -58672,6 +58709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1235035589}
+  - component: {fileID: 1235035590}
   m_Layer: 5
   m_Name: reward5
   m_TagString: Untagged
@@ -58702,6 +58740,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -258}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1235035590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235035588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734f5c5b5ec90245addba048c8ff29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 401784138}
+  dailyRewards: {fileID: 401784141}
+  rewardNumber: 5
+  gemCost: 0
+  gemCostTxt: {fileID: 539850546}
 --- !u!1 &1238876042
 GameObject:
   m_ObjectHideFlags: 0
@@ -70079,6 +70134,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503840155}
+  m_CullTransparentMesh: 1
+--- !u!1 &1506179255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1506179256}
+  - component: {fileID: 1506179258}
+  - component: {fileID: 1506179257}
+  m_Layer: 5
+  m_Name: txt_gemCost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1506179256
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506179255}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 312928444}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1506179257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506179255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 585188cdc4600544eb408bee749e4b3a, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Accept
+--- !u!222 &1506179258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506179255}
   m_CullTransparentMesh: 1
 --- !u!1 &1507341962
 GameObject:
@@ -82846,7 +82980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1765600052
 RectTransform:
   m_ObjectHideFlags: 0
@@ -85022,6 +85156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1816510788}
+  - component: {fileID: 1816510789}
   m_Layer: 5
   m_Name: reward2
   m_TagString: Untagged
@@ -85052,6 +85187,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 264}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1816510789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816510787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734f5c5b5ec90245addba048c8ff29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 401784138}
+  dailyRewards: {fileID: 401784141}
+  rewardNumber: 2
+  gemCost: 0
+  gemCostTxt: {fileID: 38586939}
 --- !u!1 &1819501896
 GameObject:
   m_ObjectHideFlags: 0
@@ -91803,6 +91955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1950155507}
+  - component: {fileID: 1950155508}
   m_Layer: 5
   m_Name: reward6
   m_TagString: Untagged
@@ -91833,6 +91986,23 @@ RectTransform:
   m_AnchoredPosition: {x: 661, y: -258}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1950155508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950155506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734f5c5b5ec90245addba048c8ff29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 401784138}
+  dailyRewards: {fileID: 401784141}
+  rewardNumber: 6
+  gemCost: 0
+  gemCostTxt: {fileID: 1336896564}
 --- !u!1001 &1952565399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96541,6 +96711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052945694}
+  - component: {fileID: 2052945695}
   m_Layer: 5
   m_Name: reward1
   m_TagString: Untagged
@@ -96570,6 +96741,23 @@ RectTransform:
   m_AnchoredPosition: {x: -661, y: 264}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2052945695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052945693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734f5c5b5ec90245addba048c8ff29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 401784138}
+  dailyRewards: {fileID: 401784141}
+  rewardNumber: 1
+  gemCost: 0
+  gemCostTxt: {fileID: 1506179257}
 --- !u!1 &2055491368
 GameObject:
   m_ObjectHideFlags: 0
