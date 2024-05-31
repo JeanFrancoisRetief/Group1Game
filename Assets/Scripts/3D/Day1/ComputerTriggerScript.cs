@@ -77,7 +77,7 @@ public class ComputerTriggerScript : MonoBehaviour
             frameCounter = 0;
         }
 
-        if (seconds >= 60 * 3)
+        if (seconds >= 15)
         {
             farm.SetActive(false);
 
