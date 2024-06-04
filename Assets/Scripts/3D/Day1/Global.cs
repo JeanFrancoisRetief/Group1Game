@@ -12,6 +12,8 @@ public class Global : MonoBehaviour
     public GameObject Envornment3;
     public GameObject Envornment4;
     public GameObject Envornment5;
+
+    public GameObject startText;
     //public int InteractCounter;
     // Start is called before the first frame update
     void Start()

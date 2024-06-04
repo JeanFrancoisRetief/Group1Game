@@ -23,6 +23,9 @@ public class chickens : MonoBehaviour
     public Text chickenUp1;
     public Text chickenUp2;
     public Text chickenUp3;
+    public Text chickenUp4;
+    public GameObject chickenUp4GO;
+    public GameObject btnChickenUp4;
 
     [Header("Unlock")]
     public int coopPrice;
@@ -31,6 +34,17 @@ public class chickens : MonoBehaviour
     public GameObject btnChickens;
     public GameObject btnUpgradeChickens;
     public Text txtCoopPrice;
+
+    [Header("Incubator")]
+    public int incUnlockLvl;
+    public int incUnlockPrice;
+    public Text txtTimeToHatch;
+    public float timeToHatch;
+    public float actualTimeToHatch;
+    public GameObject btnPlaceEgg;
+    public GameObject btnHatchEgg;
+    public GameObject GOTimeToHatch;
+    public GameObject GOInc;
 
     // Start is called before the first frame update
     void Start()
@@ -42,8 +56,16 @@ public class chickens : MonoBehaviour
         eggsLaid = 1;
         chickenUpCost = 25;
         actualTimeToLay = 120f;
+        actualTimeToHatch = 150f;
 
+        GOInc.SetActive(false);
         collectBtn.SetActive(false);
+        btnPlaceEgg.SetActive(true);
+        btnHatchEgg.SetActive(false);
+        GOTimeToHatch.SetActive(false);
+
+        chickenUp4GO.SetActive(false);
+        btnChickenUp4.SetActive(false);
     }
 
     // Update is called once per frame
@@ -63,11 +85,20 @@ public class chickens : MonoBehaviour
         }
         int minutes = Mathf.FloorToInt(timeToLay / 60);
         int seconds = Mathf.FloorToInt(timeToLay % 60);
-        //timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
         chickenUp1.text = "Number of Chickens: +1";
         chickenUp2.text = "Number of Eggs Laid: +1";
         chickenUp3.text = "Time of Eggs Laids: -20 seconds";
+        chickenUp4.text = "Buy Incubator";
+
+        if (playerStats.lvl >= 8)
+        {
+            chickenUp4GO.SetActive(true);
+        }
+        else
+        {
+            chickenUp4GO.SetActive(false);
+        }
 
         chickenUpCostTxt.text = "Cost: " + chickenUpCost;
 
@@ -90,6 +121,24 @@ public class chickens : MonoBehaviour
             btnUpgradeChickens.SetActive(false);
             btnPurchaseCoop.SetActive(true);
         }
+
+        //timer for eggs to hatch
+
+        txtTimeToHatch.text = "Time to Hatch: " + timeToHatch;
+
+        if (timeToHatch > 0)
+        {
+            timeToHatch -= Time.deltaTime;
+            GOTimeToHatch.SetActive(true);
+        }
+        else if (timeToHatch < 0)
+        {
+            timeToHatch = 0;
+            btnHatchEgg.SetActive(true);
+            GOTimeToHatch.SetActive(false);
+        }
+        int minutesHatch = Mathf.FloorToInt(timeToHatch / 60);
+        int secondsHatch = Mathf.FloorToInt(timeToHatch % 60);
     }
 
     public void BuyCoop()
@@ -166,5 +215,39 @@ public class chickens : MonoBehaviour
                 timeToLay = actualTimeToLay;
             }
         }
+    }
+
+    public void BuyIncubator()
+    {
+        if (playerStats.coins >= incUnlockPrice)
+        {
+            playerStats.coins = playerStats.coins - incUnlockPrice;
+
+            GOInc.SetActive(true);
+            chickenUp4GO.SetActive(false);
+        }
+    }
+
+    public void PlaceEgg()
+    {
+        if (playerStats.eggsAmt >= 1)
+        {
+            playerStats.eggsAmt = playerStats.eggsAmt - 1;
+
+            btnPlaceEgg.SetActive(false);
+
+            timeToHatch = actualTimeToHatch;
+        }
+    }
+
+    public void HatchEgg()
+    {
+        if (playerStats.chickenAmt < playerStats.maxChickenAmt)
+        {
+            playerStats.chickenAmt = playerStats.chickenAmt + 1;
+
+            btnHatchEgg.SetActive(false);
+            btnPlaceEgg.SetActive(true);
+        }    
     }
 }

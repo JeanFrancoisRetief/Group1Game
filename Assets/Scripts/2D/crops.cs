@@ -27,6 +27,8 @@ public class crops : MonoBehaviour
 
     public bool wheatSelected;
 
+    public GameObject imgWheatReady;
+
     [Header("Corn")]
     public string cornName;
     public Text cornNameTxt;
@@ -42,6 +44,8 @@ public class crops : MonoBehaviour
 
     public bool cornSelected;
 
+    public GameObject imgCornReady;
+
     [Header("Rice")]
     public string riceName;
     public Text riceNameTxt;
@@ -56,6 +60,8 @@ public class crops : MonoBehaviour
     public Text yieldRiceTxt;
 
     public bool riceSelected;
+
+    public GameObject imgRiceReady;
 
     [Header("Crop Plot")]
     public string cropPlotName;
@@ -87,6 +93,11 @@ public class crops : MonoBehaviour
 
         //crop plot
         cropPlotNameTxt.text = "Empty";
+
+        //crop images
+        imgWheatReady.SetActive(false);
+        imgCornReady.SetActive(false);
+        imgRiceReady.SetActive(false);
 
         //wheat
         wheatName = "Wheat";
@@ -145,6 +156,21 @@ public class crops : MonoBehaviour
         else if (timeToGrow < 0)
         {
             timeToGrow = 0;
+
+            if (wheatSelected)
+            {
+                imgWheatReady.SetActive(true);
+            }
+
+            if (cornSelected)
+            {
+                imgCornReady.SetActive(true);
+            }
+
+            if (riceSelected)
+            {
+                imgRiceReady.SetActive(true);
+            }
 
             harvestBtn.SetActive(true);
         }
@@ -259,6 +285,7 @@ public class crops : MonoBehaviour
                 playerStats.wheatAmt = playerStats.wheatAmt + yieldWheat;
                 wheatSelected = false;
                 harvestBtn.SetActive(false);
+                imgWheatReady.SetActive(false);
 
                 if (playerStats.wheatAmt >= playerStats.maxWheatAmt)
                 {
@@ -281,6 +308,7 @@ public class crops : MonoBehaviour
                 playerStats.cornAmt = playerStats.cornAmt + yieldCorn;
                 cornSelected = false;
                 harvestBtn.SetActive(false);
+                imgCornReady.SetActive(false);
 
                 if (playerStats.cornAmt >= playerStats.maxCowAmt)
                 {
@@ -304,6 +332,7 @@ public class crops : MonoBehaviour
                 playerStats.riceAmt = playerStats.riceAmt + yieldRice;
                 riceSelected = false;
                 harvestBtn.SetActive(false);
+                imgRiceReady.SetActive(false);
 
                 if (playerStats.riceAmt >= playerStats.maxRiceAmt)
                 {

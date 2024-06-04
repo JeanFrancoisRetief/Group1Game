@@ -2,8 +2,8 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.MPE;
-using UnityEditor.Rendering.Universal;
+//using UnityEditor.MPE;
+//using UnityEditor.Rendering.Universal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +17,8 @@ public class playerStats : MonoBehaviour
     public Slider sldXP;
     public int coins;
     public Text coinsTxt;
+    public int gems;
+    //public Text gemsTxt;
     public float time;
     public Text timeTxt;
     public int day;
@@ -136,15 +138,14 @@ public class playerStats : MonoBehaviour
     [Header("Misc")]
     public GameObject notEnoughCoins;
     public crops crops;
+    public Global global;
 
     // Start is called before the first frame update
     void Start()
     {
-        lvl = 10;
+        lvl = 5;
         xp = 0;
         xpLimit = 10;
-        //coins = 10;
-        day = 1;
         time = 1;
         reqPending = 0;
 
@@ -191,8 +192,9 @@ public class playerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        day = global.DayCounter - 1;
         dayTxt.text = "Day: " + day;
-        timeTxt.text = "Time: " + time;
+        timeTxt.text = " ";
 
         sldXP.value = xp;
         sldXP.maxValue = xpLimit;
@@ -223,19 +225,6 @@ public class playerStats : MonoBehaviour
 
         reqPendingTxt.text = "Req Pending: " + reqPending;
 
-        //time of day
-        //if (time > 0)
-        //{
-        //    time += Time.deltaTime;
-        //}
-        //else if (time < 0)
-        //{
-        //    time = 0;
-        //}
-        //int minutes = Mathf.FloorToInt(time / 60);
-        //int seconds = Mathf.FloorToInt(time % 60);
-        //timeTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-
         //silo
         txtSiloRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockSilo;
         txtBuySilo.text = "Buy Silo " + siloPrice + " Coins";
@@ -250,18 +239,6 @@ public class playerStats : MonoBehaviour
         txtCompostRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockCompost;
         txtBuyCompost.text = "Buy Compost Mixer " + compostPrice + " Coins";
         txtCompostUpgrade.text = "Coins: " + compostUpgradePrice;
-
-        if (timeCompostLasts > 0)
-        {
-            timeCompostLasts -= Time.deltaTime;
-        }
-        else if (timeCompostLasts < 0)
-        {
-            timeCompostLasts = 0;
-        }
-        int minutes = Mathf.FloorToInt(timeCompostLasts / 60);
-        int seconds = Mathf.FloorToInt(timeCompostLasts % 60);
-        txtTimeCompostLasts.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
         //transport
         txtTransportRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockTransport;
