@@ -107,6 +107,7 @@ public class farmShop : MonoBehaviour
                 wheatInShop = wheatInShop - 10;
 
                 playerStats.coins = playerStats.coins + 10;
+                playerStats.xp = playerStats.xp + 5;
             }
         }
 
@@ -117,6 +118,7 @@ public class farmShop : MonoBehaviour
                 cornInShop = cornInShop - 10;
 
                 playerStats.coins = playerStats.coins + 10;
+                playerStats.xp = playerStats.xp + 5;
             }
         }
 
@@ -127,6 +129,7 @@ public class farmShop : MonoBehaviour
                 riceInShop = riceInShop - 10;
 
                 playerStats.coins = playerStats.coins + 10;
+                playerStats.xp = playerStats.xp + 5;
             }
         }
 
@@ -137,6 +140,7 @@ public class farmShop : MonoBehaviour
                 chickensInShop = chickensInShop - 1;
 
                 playerStats.coins = playerStats.coins + 25;
+                playerStats.xp = playerStats.xp + 15;
             }
         }
 
@@ -147,6 +151,7 @@ public class farmShop : MonoBehaviour
                 eggsInShop = eggsInShop - 6;
 
                 playerStats.coins = playerStats.coins + 30;
+                playerStats.xp = playerStats.xp + 10;
             }
         }
 
@@ -157,6 +162,7 @@ public class farmShop : MonoBehaviour
                 cowsInShop = cowsInShop - 1;
 
                 playerStats.coins = playerStats.coins + 40;
+                playerStats.xp = playerStats.xp + 25;
             }
         }
 
@@ -167,6 +173,7 @@ public class farmShop : MonoBehaviour
                 milkBottlesInShop = milkBottlesInShop - 1;
 
                 playerStats.coins = playerStats.coins + 10;
+                playerStats.xp = playerStats.xp + 10;
             }
         }
 

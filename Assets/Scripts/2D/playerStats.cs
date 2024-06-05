@@ -273,6 +273,8 @@ public class playerStats : MonoBehaviour
             maxWheatAmt = maxWheatAmt + siloBenefit;
             maxCornAmt = maxCornAmt + siloBenefit;
             maxRiceAmt = maxRiceAmt + siloBenefit;
+
+            xp = xp + 50;
         }
         else
         {
@@ -318,6 +320,8 @@ public class playerStats : MonoBehaviour
             crops.yieldWheat = crops.yieldWheat + ghBenefit;
             crops.yieldCorn = crops.yieldCorn + ghBenefit;
             crops.yieldRice = crops.yieldRice + ghBenefit;
+
+            xp = xp + 300;
         }
         else
         {
@@ -360,6 +364,8 @@ public class playerStats : MonoBehaviour
             btnMakeCompost.SetActive(true);
 
             coins = coins - compostPrice;
+
+            xp = xp + 150;
         }
         else
         {
@@ -435,6 +441,8 @@ public class playerStats : MonoBehaviour
             coins = coins - transportPrice;
 
             transportBenefit = transportBenefit + 5;
+
+            xp = xp = 150;
         }
         else
         {
@@ -472,6 +480,8 @@ public class playerStats : MonoBehaviour
 
             coins = coins - shopPrice;
             farmShop.findRange = true;
+
+            xp = xp + 500;
         }
         else
         {

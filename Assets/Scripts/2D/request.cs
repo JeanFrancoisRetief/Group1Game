@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.XPath;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,12 +18,15 @@ public class request : MonoBehaviour
     public int cowsReq;
     public int milkReq;
 
+    [Header("Earned")]
+    public int pay;
+    public int xpEarned;
+
+    [Header("Other")]
     public GameObject selectBtn;
     public GameObject sendBtn;
-
-    public int pay;
-
     public GameObject unable;
+
 
     private void Start()
     {
@@ -36,6 +40,7 @@ public class request : MonoBehaviour
         {
             playerStats.coins = playerStats.coins + pay + (pay * (playerStats.transportBenefit * 100)); //adds the money earned from request to the total coins
             playerStats.reqPending = playerStats.reqPending - 1; //removes one request because it was completed
+            playerStats.xp = playerStats.xp + xpEarned;
 
             playerStats.wheatAmt = playerStats.wheatAmt - wheatReq; //subtracts once the resources are sent to requester
             playerStats.cornAmt = playerStats.cornAmt - cornReq;

@@ -98,6 +98,8 @@ public class cows : MonoBehaviour
         {
             playerStats.coins = playerStats.coins - barnPrice;
             isUnlocked = true;
+
+            playerStats.xp = playerStats.xp + 100;
         }
         else
         {

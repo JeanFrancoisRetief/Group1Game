@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 2114283754330233425}
-  m_IndirectSpecularColor: {r: 0.029152213, g: 0.064445764, b: 0.12695098, a: 1}
+  m_IndirectSpecularColor: {r: 0.029152056, g: 0.06444542, b: 0.12695055, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -54347,7 +54347,7 @@ MonoBehaviour:
   yieldWheat: 0
   yieldWheatTxt: {fileID: 1941197572}
   wheatSelected: 0
-  imgWheatReady: {fileID: 0}
+  imgWheatReady: {fileID: 808380618}
   cornName: Corn
   cornNameTxt: {fileID: 826263420}
   timeToGrowCorn: 0
@@ -54357,7 +54357,7 @@ MonoBehaviour:
   yieldCorn: 0
   yieldCornTxt: {fileID: 52956748}
   cornSelected: 0
-  imgCornReady: {fileID: 0}
+  imgCornReady: {fileID: 1728172927}
   riceName: Rice
   riceNameTxt: {fileID: 965260441}
   timeToGrowRice: 0
@@ -54367,7 +54367,7 @@ MonoBehaviour:
   yieldRice: 0
   yieldRiceTxt: {fileID: 1438584156}
   riceSelected: 0
-  imgRiceReady: {fileID: 0}
+  imgRiceReady: {fileID: 63990627}
   cropPlotName: 
   cropPlotNameTxt: {fileID: 1482114431}
   timeToGrow: 0
@@ -78866,9 +78866,10 @@ MonoBehaviour:
   eggsReq: 0
   cowsReq: 0
   milkReq: 0
+  pay: 15
+  xpEarned: 5
   selectBtn: {fileID: 773708254}
   sendBtn: {fileID: 198124717}
-  pay: 15
   unable: {fileID: 1064568842}
 --- !u!222 &1622566843
 CanvasRenderer:
