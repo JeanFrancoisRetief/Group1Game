@@ -6,6 +6,8 @@ public class microtransactionScript : MonoBehaviour
 {
     public int gems;
     public int coins;
+
+    public GameObject img_NoMoreGems;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +29,7 @@ public class microtransactionScript : MonoBehaviour
         }
         else
         {
-
+            img_NoMoreGems.SetActive(true);
         }
     }
 }
