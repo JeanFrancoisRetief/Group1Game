@@ -5,6 +5,7 @@ using System.Xml.XPath;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
 
 public class crops : MonoBehaviour
 {
@@ -153,7 +154,7 @@ public class crops : MonoBehaviour
         if (timeToGrow > 0)
         {
             timeToGrow -= Time.deltaTime;
-            //this.gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = false;
         }
         else if (timeToGrow < 0)
         {
@@ -186,13 +187,11 @@ public class crops : MonoBehaviour
         if (isUnlocked == true)
         {
             btnCrop1.GetComponent<UnityEngine.UI.Image>().color = Color.white;
-            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
             btnPurchaseCrop.SetActive(false);
         }
         else
         {
             btnCrop1.GetComponent<UnityEngine.UI.Image>().color = Color.gray;
-            btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = false;
             btnPurchaseCrop.SetActive(true);
         }
     }
