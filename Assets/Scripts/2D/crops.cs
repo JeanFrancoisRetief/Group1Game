@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.XPath;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -203,6 +204,8 @@ public class crops : MonoBehaviour
             isUnlocked = true;
 
             playerStats.cropPrice = playerStats.cropPrice * 2;
+
+            playerStats.xp = playerStats.xp + 25;
         }
         else
         {
@@ -292,6 +295,8 @@ public class crops : MonoBehaviour
                     playerStats.wheatAmt = playerStats.maxWheatAmt;
                 }
 
+                playerStats.xp = playerStats.xp + 5;
+
                 cropPlotNameTxt.text = "Empty";
                 btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
             }
@@ -314,6 +319,8 @@ public class crops : MonoBehaviour
                 {
                     playerStats.cornAmt = playerStats.maxCornAmt;
                 }
+
+                playerStats.xp = playerStats.xp + 5;
 
                 cropPlotNameTxt.text = "Empty";
                 btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;
@@ -338,6 +345,8 @@ public class crops : MonoBehaviour
                 {
                     playerStats.riceAmt = playerStats.maxRiceAmt;
                 }
+
+                playerStats.xp = playerStats.xp + 5;
 
                 cropPlotNameTxt.text = "Empty";
                 btnCrop1.GetComponent<UnityEngine.UI.Button>().enabled = true;

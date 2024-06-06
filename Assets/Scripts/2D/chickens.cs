@@ -147,6 +147,8 @@ public class chickens : MonoBehaviour
         {
             playerStats.coins = playerStats.coins - coopPrice;
             isUnlocked = true;
+
+            playerStats.xp = playerStats.xp + 75;
         }
         else
         {
