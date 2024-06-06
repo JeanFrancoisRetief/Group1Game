@@ -153,6 +153,7 @@ public class crops : MonoBehaviour
         if (timeToGrow > 0)
         {
             timeToGrow -= Time.deltaTime;
+            //this.gameObject.GetComponent<UnityEngine.UI.Button>().enabled = false;
         }
         else if (timeToGrow < 0)
         {
