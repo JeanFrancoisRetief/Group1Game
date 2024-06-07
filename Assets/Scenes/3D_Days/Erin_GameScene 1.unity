@@ -11502,6 +11502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 206645795}
+  - component: {fileID: 206645796}
   m_Layer: 5
   m_Name: compostMixer
   m_TagString: Untagged
@@ -11534,6 +11535,22 @@ RectTransform:
   m_AnchoredPosition: {x: -282, y: 22.99997}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &206645796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206645794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: f1d1c287ded68be43934c42c517f05d2, type: 2}
+  infoLeft: "decreases the time it takes to grow crops for a certain period of time
+    but requires a certain number of each crop to make compost \n"
+  infoRight: 
 --- !u!1 &209637765
 GameObject:
   m_ObjectHideFlags: 0
@@ -46167,7 +46184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbe7e382eba66a43a5eaccdfd66a3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 755292009}
 --- !u!1 &915529977
 GameObject:
   m_ObjectHideFlags: 0
@@ -56853,6 +56869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1114981343}
+  - component: {fileID: 1114981344}
   m_Layer: 5
   m_Name: transportVehicle
   m_TagString: Untagged
@@ -56883,6 +56900,21 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: 23}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1114981344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114981342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: f1d1c287ded68be43934c42c517f05d2, type: 2}
+  infoLeft: "faster deliveries of request so the customers pay us more \n"
+  infoRight: 
 --- !u!1 &1117276823
 GameObject:
   m_ObjectHideFlags: 0
@@ -60634,6 +60666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209764859}
   - component: {fileID: 1209764858}
+  - component: {fileID: 1209764860}
   m_Layer: 5
   m_Name: farmShop
   m_TagString: Untagged
@@ -60707,6 +60740,21 @@ RectTransform:
   m_AnchoredPosition: {x: 598, y: 22.99997}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1209764860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209764857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: f1d1c287ded68be43934c42c517f05d2, type: 2}
+  infoLeft: "places items in the shop that will sell randomly and earn money in\_the\_background"
+  infoRight: 
 --- !u!1001 &1210256036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94143,6 +94191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1886370123}
+  - component: {fileID: 1886370124}
   m_Layer: 5
   m_Name: greenhouse
   m_TagString: Untagged
@@ -94173,6 +94222,23 @@ RectTransform:
   m_AnchoredPosition: {x: -573, y: 22.99997}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1886370124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886370122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: f1d1c287ded68be43934c42c517f05d2, type: 2}
+  infoLeft: 'amount gained from growing crops
+
+'
+  infoRight: 
 --- !u!1001 &1887576153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99456,6 +99522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1999764265}
   - component: {fileID: 1999764266}
+  - component: {fileID: 1999764267}
   m_Layer: 5
   m_Name: silo
   m_TagString: Untagged
@@ -99494,6 +99561,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999764264}
   m_CullTransparentMesh: 1
+--- !u!114 &1999764267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999764264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: f1d1c287ded68be43934c42c517f05d2, type: 2}
+  infoLeft: increase max of the crops you can hold
+  infoRight: 
 --- !u!1 &2000317670
 GameObject:
   m_ObjectHideFlags: 0
