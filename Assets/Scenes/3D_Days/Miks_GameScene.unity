@@ -25396,11 +25396,12 @@ MonoBehaviour:
   Silo: {fileID: 1012327740}
   btnBuySilo: {fileID: 1183114617}
   btnUpgradeSilo: {fileID: 1551575360}
-  lvlToUnlockSilo: 5
   siloPrice: 50
   siloBenefit: 10
+  siloAnimalBenefit: 0
   siloUpgradePrice: 50
   siloUpgradeAmount: 10
+  siloAnimalUpgradeAmount: 0
   txtSiloRequiredLvl: {fileID: 1686995849}
   txtBuySilo: {fileID: 1384916826}
   txtSiloUpgrade: {fileID: 492602610}
@@ -25408,7 +25409,6 @@ MonoBehaviour:
   GH: {fileID: 1660440387}
   btnBuyGH: {fileID: 765519884}
   btnUpgradeGH: {fileID: 1464077306}
-  lvlToUnlockGH: 7
   ghPrice: 50
   ghBenefit: 5
   ghUpgradePrice: 50
@@ -25421,7 +25421,6 @@ MonoBehaviour:
   btnBuyCompost: {fileID: 1045685361}
   btnUpgradeCompost: {fileID: 225581431}
   btnMakeCompost: {fileID: 1977959064}
-  lvlToUnlockCompost: 8
   compostPrice: 50
   compostBenefit: 0
   compostUpgradePrice: 50
@@ -25443,7 +25442,6 @@ MonoBehaviour:
   transport: {fileID: 1927387173}
   btnBuyTransport: {fileID: 67215338}
   btnUpgradeTransport: {fileID: 1042440544}
-  lvlToUnlockTransport: 3
   transportPrice: 50
   transportBenefit: 0
   transportUpgradePrice: 50
@@ -25454,7 +25452,6 @@ MonoBehaviour:
   greyShop: {fileID: 956491847}
   shop: {fileID: 281630454}
   btnBuyShop: {fileID: 13925363}
-  lvlToUnlockShop: 10
   shopPrice: 100
   txtShopRequiredLvl: {fileID: 1454402833}
   txtBuyShop: {fileID: 1722171349}
