@@ -160,7 +160,7 @@ public class tutorial : MonoBehaviour
 
     public IEnumerator AfterOpenRequests()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         stringNo = 11;
 
@@ -170,7 +170,7 @@ public class tutorial : MonoBehaviour
 
     public IEnumerator AfterOpenStats() 
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         stringNo = 13;
 
@@ -180,7 +180,7 @@ public class tutorial : MonoBehaviour
 
     public IEnumerator EnoughWheat()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         stringNo = 15;
 
@@ -190,7 +190,7 @@ public class tutorial : MonoBehaviour
 
     public IEnumerator FulfilledRequest()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         stringNo = 17;
 

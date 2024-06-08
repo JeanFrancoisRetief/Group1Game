@@ -11,7 +11,6 @@ public class request : MonoBehaviour
     public playerStats playerStats;
 
     [Header("Request Information")]
-    public int requestDay;
     public string requestor;
     public Text txtRequestor;
     public string requestedItems;
@@ -42,17 +41,11 @@ public class request : MonoBehaviour
         selectBtn.SetActive(true);
         sendBtn.SetActive(false);
 
-        this.gameObject.SetActive(false);
+        this.gameObject.SetActive(true);
     }
 
     private void Update()
     {
-        if (requestDay == playerStats.day)
-        {
-            this.gameObject.SetActive(true);
-            Debug.Log("True");
-        }
-
         txtRequestor.text = requestor;
 
         txtRequestedItems.text = requestedItems;
@@ -89,9 +82,7 @@ public class request : MonoBehaviour
             playerStats.cowAmt = playerStats.cowAmt - cowsReq;
             playerStats.milkBottlesAmt = playerStats.milkBottlesAmt - milkReq;
 
-            //this.gameObject.SetActive(false); //deletes the game object as the request is now complete
-            //or
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false); //deletes the game object as the request is now complete
         }
         else
         {

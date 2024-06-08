@@ -2437,7 +2437,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 4
   requestor: APT 426
   txtRequestor: {fileID: 1524409727}
   requestedItems: 0
@@ -11057,7 +11056,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: Jiftlen Hale
   txtRequestor: {fileID: 1741442104}
   requestedItems: 0
@@ -16143,7 +16141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: Abigail Witby
   txtRequestor: {fileID: 352938514}
   requestedItems: 0
@@ -16224,7 +16221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 3
   requestor: Jean-Francois Retief
   txtRequestor: {fileID: 1507149612}
   requestedItems: 
@@ -24177,7 +24173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 1
   requestor: Sally Suzan
   txtRequestor: {fileID: 1072001818}
   requestedItems: 
@@ -28730,7 +28725,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 3
   requestor: Kev Turnball
   txtRequestor: {fileID: 69819370}
   requestedItems: 
@@ -33657,7 +33651,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 3
   requestor: Cupson Casper
   txtRequestor: {fileID: 270925418}
   requestedItems: 
@@ -38200,7 +38193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 3
   requestor: Butcher Bron
   txtRequestor: {fileID: 707925898}
   requestedItems: 
@@ -40047,7 +40039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: Rosco Yuftan
   txtRequestor: {fileID: 1779299532}
   requestedItems: 0
@@ -42031,7 +42022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 2
   requestor: Sheriff Diggs
   txtRequestor: {fileID: 852710237}
   requestedItems: 
@@ -43659,7 +43649,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 1
   requestor: Malakai Braam
   txtRequestor: {fileID: 89283280}
   requestedItems: 
@@ -55732,7 +55721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 4
   requestor: Lil Buck
   txtRequestor: {fileID: 134587194}
   requestedItems: 
@@ -60277,7 +60265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 2
   requestor: Butcher Bron
   txtRequestor: {fileID: 250064061}
   requestedItems: 
@@ -67586,7 +67573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 4
   requestor: Richoux Poux
   txtRequestor: {fileID: 1641387000}
   requestedItems: 
@@ -70343,7 +70329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 3
   requestor: Gallies
   txtRequestor: {fileID: 1848120513}
   requestedItems: 
@@ -70660,7 +70645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 3
   requestor: Bushnaai Bobby
   txtRequestor: {fileID: 1345697514}
   requestedItems: 
@@ -72867,7 +72851,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: Captain Corn
   txtRequestor: {fileID: 2108745665}
   requestedItems: 0
@@ -78599,7 +78582,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 4
   requestor: DJ Casis
   txtRequestor: {fileID: 485358557}
   requestedItems: 
@@ -80360,7 +80342,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: Butcher Bron
   txtRequestor: {fileID: 1115422704}
   requestedItems: 0
@@ -82701,7 +82682,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: Michelle Prosee
   txtRequestor: {fileID: 1029055808}
   requestedItems: 0
@@ -84240,7 +84220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 4
   requestor: Butcher Bron
   txtRequestor: {fileID: 197531837}
   requestedItems: 
@@ -92933,7 +92912,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: Butcher Bron
   txtRequestor: {fileID: 1163728641}
   requestedItems: 0
@@ -96846,7 +96824,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 1
   requestor: Mayor Brown
   txtRequestor: {fileID: 692094415}
   requestedItems: 
@@ -103587,6 +103564,33 @@ MonoBehaviour:
   Envornment4: {fileID: 2024064495}
   Envornment5: {fileID: 1511927212}
   startText: {fileID: 0}
+  req1: {fileID: 1622566840}
+  req2: {fileID: 367556911}
+  req3: {fileID: 700108159}
+  req4: {fileID: 2031468113}
+  req5: {fileID: 669192048}
+  req6: {fileID: 2067932544}
+  req7: {fileID: 970454879}
+  req8: {fileID: 450830299}
+  req9: {fileID: 231492721}
+  req10: {fileID: 1122422856}
+  req11: {fileID: 520469606}
+  req12: {fileID: 603050767}
+  req13: {fileID: 1118628289}
+  req14: {fileID: 1277200883}
+  req15: {fileID: 1782032132}
+  req16: {fileID: 1081126627}
+  req17: {fileID: 1396859102}
+  req18: {fileID: 882253491}
+  req19: {fileID: 32599428}
+  req20: {fileID: 231177821}
+  req21: {fileID: 1363883204}
+  req22: {fileID: 1536066735}
+  req23: {fileID: 143664951}
+  req24: {fileID: 640469126}
+  req25: {fileID: 2137032939}
+  req26: {fileID: 1324864927}
+  req27: {fileID: 1174169427}
 --- !u!1001 &1726880191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106976,7 +106980,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 4
   requestor: Skatey Joe
   txtRequestor: {fileID: 2146283258}
   requestedItems: 
@@ -122643,7 +122646,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 2
   requestor: Gigglesmire
   txtRequestor: {fileID: 80272354}
   requestedItems: 
@@ -124682,7 +124684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 2
   requestor: Erin Harper
   txtRequestor: {fileID: 1106146107}
   requestedItems: 
@@ -129996,7 +129997,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
-  requestDay: 5
   requestor: APT 426
   txtRequestor: {fileID: 113757421}
   requestedItems: 0
