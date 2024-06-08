@@ -21,6 +21,7 @@ public class cows : MonoBehaviour
     public Text cowUp1;
     public Text cowUp2;
     public Text cowUp3;
+    public Text cowUp4;
     public int cowUpCost;
     public Text cowUpCostTxt;
 
@@ -68,6 +69,7 @@ public class cows : MonoBehaviour
         cowUp1.text = "Number of Cows: +1";
         cowUp2.text = "Number of Milk Bottles Filled: +1";
         cowUp3.text = "Time Milks Bottles take to be Filled: -20 seconds";
+        cowUp4.text = "Inc Max Number of Cows: X2";
 
         cowUpCostTxt.text = "Cost: " + cowUpCost;
 
@@ -167,6 +169,20 @@ public class cows : MonoBehaviour
             {
                 timeToMilk = actualTimeToMilk;
             }
+        }
+    }
+
+    public void IncMaxNumberCows()
+    {
+        if (playerStats.coins >= cowUpCost)
+        {
+            playerStats.maxCowAmt = playerStats.maxCowAmt * 2;
+            playerStats.coins = playerStats.coins - cowUpCost;
+            cowUpCost = cowUpCost * 2;
+        }
+        else
+        {
+            notEnoughCoins.SetActive(true);
         }
     }
 }

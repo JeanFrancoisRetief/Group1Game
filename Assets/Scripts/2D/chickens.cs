@@ -24,6 +24,7 @@ public class chickens : MonoBehaviour
     public Text chickenUp2;
     public Text chickenUp3;
     public Text chickenUp4;
+    public Text chickenUp5;
     public GameObject chickenUp4GO;
     public GameObject btnChickenUp4;
 
@@ -90,6 +91,7 @@ public class chickens : MonoBehaviour
         chickenUp2.text = "Number of Eggs Laid: +1";
         chickenUp3.text = "Time of Eggs Laids: -20 seconds";
         chickenUp4.text = "Buy Incubator";
+        chickenUp5.text = "Inc Max Number of Chickens: X2";
 
         if (playerStats.lvl >= 8)
         {
@@ -251,5 +253,19 @@ public class chickens : MonoBehaviour
             btnHatchEgg.SetActive(false);
             btnPlaceEgg.SetActive(true);
         }    
+    }
+
+    public void IncMaxNumberChickens()
+    {
+        if (playerStats.coins >= chickenUpCost)
+        {
+            playerStats.maxChickenAmt = playerStats.maxChickenAmt * 2;
+            playerStats.coins = playerStats.coins - chickenUpCost;
+            chickenUpCost = chickenUpCost * 2;
+        }
+        else
+        {
+            notEnoughCoins.SetActive(true);
+        }
     }
 }

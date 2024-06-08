@@ -18,7 +18,8 @@ public class playerStats : MonoBehaviour
     public int coins;
     public Text coinsTxt;
     public int gems;
-    //public Text gemsTxt;
+    public Text gemsTxt;
+    public int gemUp;
     public float time;
     public Text timeTxt;
     public int day;
@@ -150,6 +151,7 @@ public class playerStats : MonoBehaviour
         xpLimit = 10;
         time = 1;
         reqPending = 0;
+        gemUp = 5;
 
         //silo
         greySilo.SetActive(true);
@@ -204,12 +206,16 @@ public class playerStats : MonoBehaviour
         lvlTxt.text = "Lvl: " + lvl;
 
         coinsTxt.text = "Coins: " + coins;
+        gemsTxt.text = "Gems: " + gems;
 
         if (xp >= xpLimit)
         {
             xp = 0;
 
             xpLimit = xpLimit * 2;
+
+            gems = gems + gemUp;
+            gemUp = gemUp * 2;
 
             lvl = lvl + 1;
         }
