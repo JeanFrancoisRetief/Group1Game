@@ -1568,6 +1568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 0}
+  requestDay: 0
   wheatReq: 25
   cornReq: 0
   riceReq: 0
@@ -80701,6 +80702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 401784138}
+  requestDay: 1
   wheatReq: 25
   cornReq: 0
   riceReq: 0

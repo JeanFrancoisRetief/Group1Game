@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.XPath;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,13 @@ public class request : MonoBehaviour
 {
     [Header("Scripts")]
     public playerStats playerStats;
+
+    [Header("Request Information")]
+    public string requestor;
+    public Text txtRequestor;
+    public string requestedItems;
+    public Text txtRequestedItems;
+    public bool glitchReq;
 
     [Header("Resources Requested")]
     public int wheatReq;
@@ -32,6 +40,30 @@ public class request : MonoBehaviour
     {
         selectBtn.SetActive(true);
         sendBtn.SetActive(false);
+
+        this.gameObject.SetActive(true);
+    }
+
+    private void Update()
+    {
+        txtRequestor.text = requestor;
+
+        txtRequestedItems.text = requestedItems;
+
+        if (glitchReq == false)
+        {
+            requestedItems = wheatReq + " Wheat; "
+                + cornReq + " Corn; "
+                + riceReq + " Rice; "
+                + chickensReq + " Chickens; "
+                + eggsReq + " Eggs; "
+                + cowsReq + " Cows; "
+                + milkReq + " Milk Bottles";
+        }
+        else
+        {
+            txtRequestedItems.text = "Get the #*$& out!";
+        }
     }
 
     public void Send()

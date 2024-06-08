@@ -60,11 +60,13 @@ public class playerStats : MonoBehaviour
     public GameObject Silo;
     public GameObject btnBuySilo;
     public GameObject btnUpgradeSilo;
-    public int lvlToUnlockSilo;
+    //public int lvlToUnlockSilo;
     public int siloPrice;
     public int siloBenefit;
+    public int siloAnimalBenefit;
     public int siloUpgradePrice;
     public int siloUpgradeAmount;
+    public int siloAnimalUpgradeAmount;
     public Text txtSiloRequiredLvl;
     public Text txtBuySilo;
     public Text txtSiloUpgrade;
@@ -74,7 +76,7 @@ public class playerStats : MonoBehaviour
     public GameObject GH;
     public GameObject btnBuyGH;
     public GameObject btnUpgradeGH;
-    public int lvlToUnlockGH;
+    //public int lvlToUnlockGH;
     public int ghPrice;
     public int ghBenefit;
     public int ghUpgradePrice;
@@ -89,7 +91,7 @@ public class playerStats : MonoBehaviour
     public GameObject btnBuyCompost;
     public GameObject btnUpgradeCompost;
     public GameObject btnMakeCompost;
-    public int lvlToUnlockCompost;
+    //public int lvlToUnlockCompost;
     public int compostPrice;
     public int compostBenefit;
     public int compostUpgradePrice;
@@ -116,7 +118,7 @@ public class playerStats : MonoBehaviour
     public GameObject transport;
     public GameObject btnBuyTransport;
     public GameObject btnUpgradeTransport;
-    public int lvlToUnlockTransport;
+    //public int lvlToUnlockTransport;
     public int transportPrice;
     public int transportBenefit;
     public int transportUpgradePrice;
@@ -129,7 +131,7 @@ public class playerStats : MonoBehaviour
     public GameObject greyShop;
     public GameObject shop;
     public GameObject btnBuyShop;
-    public int lvlToUnlockShop;
+    //public int lvlToUnlockShop;
     public int shopPrice;
     public Text txtShopRequiredLvl;
     public Text txtBuyShop;
@@ -155,6 +157,7 @@ public class playerStats : MonoBehaviour
         btnBuySilo.SetActive(true);
         btnUpgradeSilo.SetActive(false);
         siloBenefit = 10;
+        siloAnimalBenefit = 2;
         siloUpgradeAmount = 10;
 
         //greenhouse
@@ -226,27 +229,27 @@ public class playerStats : MonoBehaviour
         reqPendingTxt.text = "Req Pending: " + reqPending;
 
         //silo
-        txtSiloRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockSilo;
+        //txtSiloRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockSilo;
         txtBuySilo.text = "Buy Silo " + siloPrice + " Coins";
         txtSiloUpgrade.text = "Coins: " + siloUpgradePrice;
 
         //greenhouse
-        txtGHRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockGH;
+        //txtGHRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockGH;
         txtBuyGH.text = "Buy Greenhouse " + ghPrice + " Coins";
         txtGHUpgrade.text = "Coins: " + ghUpgradePrice;
 
         //compost
-        txtCompostRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockCompost;
+        //txtCompostRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockCompost;
         txtBuyCompost.text = "Buy Compost Mixer " + compostPrice + " Coins";
         txtCompostUpgrade.text = "Coins: " + compostUpgradePrice;
 
         //transport
-        txtTransportRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockTransport;
+        //txtTransportRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockTransport;
         txtBuyTransport.text = "Buy Transport Vehicle " + transportPrice + " Coins";
         txtTransportUpgrade.text = "Coins: " + transportUpgradePrice;
 
         //shop
-        txtShopRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockShop;
+        //txtShopRequiredLvl.text = "Required Lvl to Unlock: " + lvlToUnlockShop;
         txtBuyShop.text = "Buy Shop " + shopPrice + " Coins";
     }
 
@@ -262,7 +265,7 @@ public class playerStats : MonoBehaviour
 
     public void BuySilo()
     {
-        if (coins >= siloPrice && lvl >= lvlToUnlockSilo)
+        if (coins >= siloPrice)
         {
             Silo.SetActive(true);
             btnUpgradeSilo.SetActive(true);
@@ -273,6 +276,9 @@ public class playerStats : MonoBehaviour
             maxWheatAmt = maxWheatAmt + siloBenefit;
             maxCornAmt = maxCornAmt + siloBenefit;
             maxRiceAmt = maxRiceAmt + siloBenefit;
+
+            maxEggsAmt = maxEggsAmt + siloAnimalBenefit;
+            maxMilkBottlesAmt = maxMilkBottlesAmt + siloAnimalBenefit;
 
             xp = xp + 50;
         }
@@ -288,12 +294,17 @@ public class playerStats : MonoBehaviour
         {
             coins = coins - siloUpgradePrice;
             siloBenefit = siloBenefit + siloUpgradeAmount;
+            siloAnimalBenefit = siloAnimalBenefit + siloAnimalUpgradeAmount;
 
             maxWheatAmt = maxWheatAmt + siloBenefit;
             maxCornAmt = maxCornAmt + siloBenefit;
             maxRiceAmt = maxRiceAmt + siloBenefit;
 
+            maxEggsAmt = maxEggsAmt + siloAnimalBenefit;
+            maxMilkBottlesAmt = maxMilkBottlesAmt + siloAnimalBenefit;
+
             siloUpgradeAmount = siloUpgradeAmount + 10;
+            siloAnimalUpgradeAmount = siloAnimalUpgradeAmount + 2;
             siloUpgradePrice = siloUpgradePrice * 2;
         }
         else
@@ -308,7 +319,7 @@ public class playerStats : MonoBehaviour
 
     public void BuyGH()
     {
-        if (coins >= ghPrice && lvl >= lvlToUnlockGH)
+        if (coins >= ghPrice)
         {
             GH.SetActive(true);
             btnUpgradeGH.SetActive(true);
@@ -355,7 +366,7 @@ public class playerStats : MonoBehaviour
 
     public void BuyCompostMixer()
     {
-        if (coins >= compostPrice && lvl >= lvlToUnlockCompost)
+        if (coins >= compostPrice)
         {
             compost.SetActive(true);
             btnUpgradeCompost.SetActive(true);
@@ -431,7 +442,7 @@ public class playerStats : MonoBehaviour
 
     public void BuyTransport()
     {
-        if (coins >= transportPrice && lvl >= lvlToUnlockTransport)
+        if (coins >= transportPrice)
         {
             transport.SetActive(true);
             btnUpgradeTransport.SetActive(true);
@@ -472,7 +483,7 @@ public class playerStats : MonoBehaviour
 
     public void BuyShop()
     {
-        if (coins >= shopPrice && lvl >= lvlToUnlockShop)
+        if (coins >= shopPrice)
         {
             shop.SetActive(true);
             btnBuyShop.SetActive(false);
