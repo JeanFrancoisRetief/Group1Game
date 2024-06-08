@@ -16,6 +16,8 @@ public class Global : MonoBehaviour
 
     public GameObject startText;
 
+    public GameObject farm;
+
     [Header("Day 1")]
     public GameObject req1;
     public GameObject req2;
@@ -52,6 +54,10 @@ public class Global : MonoBehaviour
     public GameObject req25;
     public GameObject req26;
     public GameObject req27;
+
+    [Header("Audio")]
+    public AudioSource farmGameMusic;
+
     //public int InteractCounter;
     // Start is called before the first frame update
     void Start()
@@ -59,12 +65,24 @@ public class Global : MonoBehaviour
         DialogueCounter = 0;
         //InteractCounter = 0;
         DayCounter = 1;
+
+        farmGameMusic.mute = true;
+        Debug.Log(farmGameMusic.volume);
     } 
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (farm.active == true)
+        {
+            farmGameMusic.mute = false;
+            Debug.Log(farmGameMusic.volume);
+
+        }
+        else
+        {
+            farmGameMusic.mute = true;
+        }
     }
 
     public void SwitchDay1ToDay2()
