@@ -90,6 +90,12 @@ public class DialogueTriggerScript : MonoBehaviour
                 audioDialogue.ASneighbour1.Play();
             }
 
+            if (global.DayCounter == 4)
+            {
+                audioDialogue.ASplayer.clip = audioDialogue.playerClip1Day4;
+                audioDialogue.ASplayer.Play();
+            }
+
             DialogueText.text = Dialogue01;
             //"I'm a bit busy. Playing a new game I got today!!! Talk to you tommorow though?";
         }
@@ -128,6 +134,12 @@ public class DialogueTriggerScript : MonoBehaviour
             {
                 audioDialogue.ASneighbour3.clip = audioDialogue.neighbour3Clip3;
                 audioDialogue.ASneighbour3.Play();
+            }
+
+            if (global.DayCounter == 4)
+            {
+                audioDialogue.ASplayer.clip = audioDialogue.playerClip2Day4;
+                audioDialogue.ASplayer.Play();
             }
 
             DialogueText.text = Dialogue03;

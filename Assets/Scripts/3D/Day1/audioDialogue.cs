@@ -25,12 +25,8 @@ public class audioDialogue : MonoBehaviour
     public AudioSource ASneighbour3;
 
     [Header("Player")]
-    public AudioSource player;
+    public AudioSource ASplayer;
 
-    public AudioClip bookcase1;
-    public AudioClip bed1;
-    public AudioClip poster1;
-    public AudioClip posters2;
-    public AudioClip kitchen1;
-    public AudioClip bathroom1;
+    public AudioClip playerClip1Day4;
+    public AudioClip playerClip2Day4;
 }

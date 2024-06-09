@@ -16,6 +16,9 @@ public class InteractTriggerScript : MonoBehaviour
     public bool inInteract = false;
     public string InteractString;
 
+    public AudioClip interactAudioClip;
+    public audioDialogue audioDialogue;
+
     //public Global global;
 
     // Start is called before the first frame update
@@ -69,6 +72,9 @@ public class InteractTriggerScript : MonoBehaviour
         InteractionPanel.SetActive(true);
 
         InteractionText.text = InteractString;//change is inspector!!!
+
+        audioDialogue.ASplayer.clip = interactAudioClip;
+        audioDialogue.ASplayer.Play();
 
         /*if (global.InteractCounter == 1)
         {
