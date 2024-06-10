@@ -69,7 +69,7 @@ public class InteractTriggerScript : MonoBehaviour
     {
         inInteract = true;
         //global.InteractCounter++;
-        InteractionPanel.SetActive(true);
+        //InteractionPanel.SetActive(true);
 
         InteractionText.text = InteractString;//change is inspector!!!
 

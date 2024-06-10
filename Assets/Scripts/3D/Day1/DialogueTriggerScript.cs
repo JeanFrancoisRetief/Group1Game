@@ -69,7 +69,7 @@ public class DialogueTriggerScript : MonoBehaviour
     {
         inDialogue = true;
         global.DialogueCounter++;
-        DialoguePanel.SetActive(true);
+        //DialoguePanel.SetActive(true);
         if(global.DialogueCounter == 1)
         {
             if (global.DayCounter == 1)
