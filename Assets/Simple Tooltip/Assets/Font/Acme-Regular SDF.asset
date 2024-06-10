@@ -69,8 +69,8 @@ Material:
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
-    - _ScaleRatioB: 0.73125
-    - _ScaleRatioC: 0.73125
+    - _ScaleRatioB: 0.225
+    - _ScaleRatioC: 0.225
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -90,7 +90,7 @@ Material:
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     - _WeightBold: 0.75
-    - _WeightNormal: 0
+    - _WeightNormal: 3
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   material: {fileID: -6112306360411951812}
   materialHashCode: -1754941684
   m_Version: 1.1.0
-  m_SourceFontFileGUID: 5c2ae0e60ef349a4490af41d146d0813
+  m_SourceFontFileGUID: 
   m_SourceFontFile_EditorRef: {fileID: 0}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
@@ -2630,7 +2630,7 @@ MonoBehaviour:
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
   fontWeights: []
-  normalStyle: 0
+  normalStyle: 3
   normalSpacingOffset: 0
   boldStyle: 0.75
   boldSpacing: 7
