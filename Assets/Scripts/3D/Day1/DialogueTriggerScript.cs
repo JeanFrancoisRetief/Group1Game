@@ -138,8 +138,8 @@ public class DialogueTriggerScript : MonoBehaviour
 
             if (global.DayCounter == 4)
             {
-                audioDialogue.ASplayer.clip = audioDialogue.playerClip2Day4;
-                audioDialogue.ASplayer.Play();
+                audioDialogue.ASneighbour3.clip = audioDialogue.playerClip2Day4;
+                audioDialogue.ASneighbour3.Play();
             }
 
             DialogueText.text = Dialogue03;
