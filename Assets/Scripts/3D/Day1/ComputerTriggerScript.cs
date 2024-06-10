@@ -26,6 +26,8 @@ public class ComputerTriggerScript : MonoBehaviour
     public Text StartText;
     public Color zm;  //  makes a new color zm
 
+    public GameObject PlayerCapsule;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,15 +50,17 @@ public class ComputerTriggerScript : MonoBehaviour
 
         Debug.Log(Cursor.lockState);
 
-        if (farm)
+        if (farm.active == true)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            PlayerCapsule.SetActive(false);
         }
         else 
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            PlayerCapsule.SetActive(true);
         }
 
         //time
