@@ -105,6 +105,11 @@ public class ComputerTriggerScript : MonoBehaviour
                 StartText.text = "???";
             }
 
+            if (globalScript.DayCounter == 6)
+            {
+                SceneManager.LoadScene("Credits");
+            }
+
             if (seconds == 60 * 3)
             {
                 StartCoroutine(startText());
@@ -162,7 +167,7 @@ public class ComputerTriggerScript : MonoBehaviour
 
             player.SetActive(false);
 
-            player.transform.position = new Vector3 (0, 30.6f, -2.58f);
+            player.transform.position = new Vector3(0, 30.6f, -2.58f);
 
             player.SetActive(true);
         }
@@ -209,6 +214,14 @@ public class ComputerTriggerScript : MonoBehaviour
             player.SetActive(true);
         }
 
+        else if (globalScript.DayCounter == 5)
+        {
+            globalScript.SwitchDay5ToDay6();
+
+            farm.SetActive(true);
+
+            player.SetActive(false);
+        }
     }
 
 }
