@@ -7,6 +7,7 @@ public class rewardNo : MonoBehaviour
 {
     public playerStats playerStats;
     public dailyRewards dailyRewards;
+    public progression progression;
 
     public int rewardNumber;
     public int gemCost;
@@ -51,77 +52,40 @@ public class rewardNo : MonoBehaviour
     {
         if (rewardNumber == 1)
         {
-            //reward
+            playerStats.wheatAmt = playerStats.wheatAmt + 25;
+            playerStats.cornAmt = playerStats.cornAmt + 25;
+            playerStats.riceAmt = playerStats.riceAmt + 25;
 
-            dailyRewards.reward1.SetActive(false);
+            dailyRewards.reward1Accept.SetActive(false);
         }
 
         if (rewardNumber == 2)
         {
-            //reward
+            playerStats.coins += playerStats.coins + 250;
 
-            dailyRewards.reward2.SetActive(false);
+            dailyRewards.reward2Accept.SetActive(false);
         }
 
         if (rewardNumber == 3)
         {
-            //reward
+            playerStats.chickenAmt = playerStats.chickenAmt + 3;
+            playerStats.cowAmt = playerStats.cowAmt + 2;
 
-            dailyRewards.reward3.SetActive(false);
+            dailyRewards.reward3Accept.SetActive(false);
         }
 
         if (rewardNumber == 4)
         {
-            //reward
+            playerStats.gems = playerStats.gems + 10;
 
-            dailyRewards.reward4.SetActive(false);
+            dailyRewards.reward4Accept.SetActive(false);
         }
 
         if (rewardNumber == 5)
         {
-            //reward
+            progression.toilet.SetActive(true);
 
-            dailyRewards.reward5.SetActive(false);
-        }
-
-        if (rewardNumber == 6)
-        {
-            //reward
-
-            dailyRewards.reward6.SetActive(false);
-        }
-    }
-
-    public void buyReward()
-    {
-        if (playerStats.gems >= gemCost) 
-        {
-            playerStats.gems = playerStats.gems - gemCost;
-
-            if (rewardNumber == 1)
-            {
-                dailyRewards.reward2.SetActive(true);
-            }
-
-            if (rewardNumber == 2)
-            {
-                dailyRewards.reward3.SetActive(true);
-            }
-
-            if (rewardNumber == 3)
-            {
-                dailyRewards.reward4.SetActive(true);
-            }
-
-            if (rewardNumber == 4)
-            {
-                dailyRewards.reward5.SetActive(true);
-            }
-
-            if (rewardNumber == 5)
-            {
-                dailyRewards.reward6.SetActive(true);
-            }
+            dailyRewards.reward5Accept.SetActive(false);
         }
     }
 }

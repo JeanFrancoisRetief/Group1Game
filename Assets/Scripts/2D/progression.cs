@@ -143,13 +143,16 @@ public class progression : MonoBehaviour
 
             //day four + five
             crop3.SetActive(true);
-            crop4.SetActive(false);
             cowBarn2.SetActive(true);
             greenhouse.SetActive(true);
             shop.SetActive(true);
             fridge.SetActive(true);
 
-            toilet.SetActive(true);
+            if (toilet.active) 
+            { 
+                crop4.SetActive(false);
+            }
+            
             bed.SetActive(true);
         }
     }
