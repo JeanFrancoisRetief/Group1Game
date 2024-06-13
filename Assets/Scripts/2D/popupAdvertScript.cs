@@ -25,7 +25,7 @@ public class popupAdvertScript : MonoBehaviour
         frameCounter = 0;
         AdvertNumber = 1;
         seconds = 0;
-        randomTimeSeconds = Random.Range(10, 41);
+        randomTimeSeconds = Random.Range(10, 51);
     }
 
     // Update is called once per frame
@@ -44,7 +44,7 @@ public class popupAdvertScript : MonoBehaviour
             {
                 PopupAdvert();
                 seconds = 0;
-                randomTimeSeconds = Random.Range(10, 31);
+                randomTimeSeconds = Random.Range(30, 51);
             }
         }
 

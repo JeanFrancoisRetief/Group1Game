@@ -57,6 +57,7 @@ public class Global : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource farmGameMusic;
+    public AudioSource worldGameMusic;
 
     //public int InteractCounter;
     // Start is called before the first frame update
@@ -66,8 +67,8 @@ public class Global : MonoBehaviour
         //InteractCounter = 0;
         DayCounter = 1;
 
+        worldGameMusic.mute = false;
         farmGameMusic.mute = true;
-        Debug.Log(farmGameMusic.volume);
     } 
 
     // Update is called once per frame
@@ -75,12 +76,12 @@ public class Global : MonoBehaviour
     {
         if (farm.active == true)
         {
+            worldGameMusic.mute = true;
             farmGameMusic.mute = false;
-            Debug.Log(farmGameMusic.volume);
-
         }
         else
         {
+            worldGameMusic.mute = false;
             farmGameMusic.mute = true;
         }
     }

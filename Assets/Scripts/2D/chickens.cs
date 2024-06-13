@@ -26,7 +26,6 @@ public class chickens : MonoBehaviour
     public Text chickenUp4;
     public Text chickenUp5;
     public GameObject chickenUp4GO;
-    public GameObject btnChickenUp4;
 
     [Header("Unlock")]
     public int coopPrice;
@@ -37,8 +36,7 @@ public class chickens : MonoBehaviour
     public Text txtCoopPrice;
 
     [Header("Incubator")]
-    public int incUnlockLvl;
-    public int incUnlockPrice;
+    public bool incUnlocked;
     public Text txtTimeToHatch;
     public float timeToHatch;
     public float actualTimeToHatch;
@@ -66,7 +64,6 @@ public class chickens : MonoBehaviour
         GOTimeToHatch.SetActive(false);
 
         chickenUp4GO.SetActive(false);
-        btnChickenUp4.SetActive(false);
     }
 
     // Update is called once per frame
@@ -87,13 +84,14 @@ public class chickens : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeToLay / 60);
         int seconds = Mathf.FloorToInt(timeToLay % 60);
 
+        //upgrades
         chickenUp1.text = "Number of Chickens: +1";
         chickenUp2.text = "Number of Eggs Laid: +1";
         chickenUp3.text = "Time of Eggs Laids: -20 seconds";
         chickenUp4.text = "Buy Incubator";
         chickenUp5.text = "Inc Max Number of Chickens: X2";
 
-        if (playerStats.lvl >= 8)
+        if (playerStats.lvl >= 8 && incUnlocked == false)
         {
             chickenUp4GO.SetActive(true);
         }
@@ -125,7 +123,6 @@ public class chickens : MonoBehaviour
         }
 
         //timer for eggs to hatch
-
         txtTimeToHatch.text = "Time to Hatch: " + timeToHatch;
 
         if (timeToHatch > 0)
@@ -223,9 +220,12 @@ public class chickens : MonoBehaviour
 
     public void BuyIncubator()
     {
-        if (playerStats.coins >= incUnlockPrice)
+        if (playerStats.coins >= chickenUpCost)
         {
-            playerStats.coins = playerStats.coins - incUnlockPrice;
+            playerStats.coins = playerStats.coins - chickenUpCost;
+            chickenUpCost = chickenUpCost * 2;
+
+            incUnlocked = true;
 
             GOInc.SetActive(true);
             chickenUp4GO.SetActive(false);

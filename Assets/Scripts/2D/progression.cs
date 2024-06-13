@@ -29,6 +29,11 @@ public class progression : MonoBehaviour
     public GameObject greenhouse;
     public GameObject shop;
 
+    [Header("3D Objects")]
+    public GameObject fridge;
+    public GameObject toilet;
+    public GameObject bed;
+
     private void Start()
     {
         //day one
@@ -51,6 +56,10 @@ public class progression : MonoBehaviour
         cowBarn2.SetActive(false);
         greenhouse.SetActive(false);
         shop.SetActive(false);
+
+        fridge.SetActive(false);
+        toilet.SetActive(false);
+        bed.SetActive(false);
     }
 
     private void Update()
@@ -113,6 +122,7 @@ public class progression : MonoBehaviour
             cowBarn2.SetActive(true);
             greenhouse.SetActive(true);
             shop.SetActive(true);
+            fridge.SetActive(true);
         }
 
         if (playerStats.day == 5)
@@ -127,16 +137,20 @@ public class progression : MonoBehaviour
             silo.SetActive(true);
 
             //day three
-            chickenCoop2.SetActive(true);
+            chickenCoop2.SetActive(false);
             transport.SetActive(true);
             composter.SetActive(true);
 
             //day four + five
             crop3.SetActive(true);
-            crop4.SetActive(true);
+            crop4.SetActive(false);
             cowBarn2.SetActive(true);
             greenhouse.SetActive(true);
             shop.SetActive(true);
+            fridge.SetActive(true);
+
+            toilet.SetActive(true);
+            bed.SetActive(true);
         }
     }
 }
