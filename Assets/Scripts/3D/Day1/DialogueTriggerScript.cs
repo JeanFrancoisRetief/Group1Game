@@ -113,6 +113,12 @@ public class DialogueTriggerScript : MonoBehaviour
                 audioDialogue.ASneighbour2.Play();
             }
 
+            if (global.DayCounter == 3)
+            {
+                audioDialogue.ASneighbour2.clip = audioDialogue.neighbour2Clip3;
+                audioDialogue.ASneighbour2.Play();
+            }
+
             DialogueText.text = Dialogue02;
             // "Hey, can't come out now. This new game is SOOOO addictive!";
         }
@@ -138,7 +144,7 @@ public class DialogueTriggerScript : MonoBehaviour
 
             if (global.DayCounter == 4)
             {
-                audioDialogue.ASneighbour3.clip = audioDialogue.playerClip2Day4;
+                audioDialogue.ASneighbour3.clip = audioDialogue.neighbour3Clip4;
                 audioDialogue.ASneighbour3.Play();
             }
 

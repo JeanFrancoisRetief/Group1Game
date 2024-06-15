@@ -14,6 +14,7 @@ public class audioDialogue : MonoBehaviour
     [Header("Neighbour 2")]
     public AudioClip neighbour2Clip1;
     public AudioClip neighbour2Clip2;
+    public AudioClip neighbour2Clip3;
 
     public AudioSource ASneighbour2;
 
@@ -21,6 +22,7 @@ public class audioDialogue : MonoBehaviour
     public AudioClip neighbour3Clip1;
     public AudioClip neighbour3Clip2;
     public AudioClip neighbour3Clip3;
+    public AudioClip neighbour3Clip4;
 
     public AudioSource ASneighbour3;
 

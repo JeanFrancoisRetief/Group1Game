@@ -81,7 +81,7 @@ public class ComputerTriggerScript : MonoBehaviour
             frameCounter = 0;
         }
 
-        if (seconds >= 60*3)
+        if (seconds >= 60*5)
         {
             farm.SetActive(false);
 
@@ -110,7 +110,7 @@ public class ComputerTriggerScript : MonoBehaviour
                 SceneManager.LoadScene("Credits");
             }
 
-            if (seconds == 60 * 3)
+            if (seconds == 60 * 5)
             {
                 StartCoroutine(startText());
             }

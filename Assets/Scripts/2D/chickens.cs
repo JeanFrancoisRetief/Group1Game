@@ -54,8 +54,8 @@ public class chickens : MonoBehaviour
         playerStats.maxEggsAmt = 5;
         eggsLaid = 1;
         chickenUpCost = 25;
-        actualTimeToLay = 120f;
-        actualTimeToHatch = 150f;
+        actualTimeToLay = 60f;
+        actualTimeToHatch = 90f;
 
         GOInc.SetActive(false);
         collectBtn.SetActive(false);
@@ -87,7 +87,7 @@ public class chickens : MonoBehaviour
         //upgrades
         chickenUp1.text = "Number of Chickens: +1";
         chickenUp2.text = "Number of Eggs Laid: +1";
-        chickenUp3.text = "Time of Eggs Laids: -20 seconds";
+        chickenUp3.text = "Time of Eggs Laids: -5 seconds";
         chickenUp4.text = "Buy Incubator";
         chickenUp5.text = "Inc Max Number of Chickens: X2";
 
@@ -195,7 +195,7 @@ public class chickens : MonoBehaviour
     {
         if (playerStats.coins >= chickenUpCost)
         {
-            actualTimeToLay = actualTimeToLay - 20f;
+            actualTimeToLay = actualTimeToLay - 5f;
             playerStats.coins = playerStats.coins - chickenUpCost;
             chickenUpCost = chickenUpCost * 2;
         }

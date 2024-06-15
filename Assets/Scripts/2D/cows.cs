@@ -42,7 +42,7 @@ public class cows : MonoBehaviour
         playerStats.maxMilkBottlesAmt = 5;
         milkBottles = 1;
         cowUpCost = 25;
-        actualTimeToMilk = 120f;
+        actualTimeToMilk = 60f;
 
         collectBtn.SetActive(false);
     }
@@ -68,7 +68,7 @@ public class cows : MonoBehaviour
 
         cowUp1.text = "Number of Cows: +1";
         cowUp2.text = "Number of Milk Bottles Filled: +1";
-        cowUp3.text = "Time Milks Bottles take to be Filled: -20 seconds";
+        cowUp3.text = "Milk Production: -5 seconds";
         cowUp4.text = "Inc Max Number of Cows: X2";
 
         cowUpCostTxt.text = "Cost: " + cowUpCost;
@@ -149,7 +149,7 @@ public class cows : MonoBehaviour
     {
         if (playerStats.coins >= cowUpCost)
         {
-            actualTimeToMilk = actualTimeToMilk - 20f;
+            actualTimeToMilk = actualTimeToMilk - 5f;
             playerStats.coins = playerStats.coins - cowUpCost;
             cowUpCost = cowUpCost * 2;
         }
