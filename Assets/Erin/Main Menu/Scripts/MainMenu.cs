@@ -10,6 +10,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Erin_GameScene 1");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void BacktoMain()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit!");

@@ -15,10 +15,10 @@ public class ExitScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //simple "Press esc key" then exit program - so as not to use task manager to end program
+        //Made a slight change here, when you press esc it takes you back to the main menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene("Main Menu");
         }
     }
 
