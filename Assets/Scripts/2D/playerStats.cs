@@ -146,7 +146,7 @@ public class playerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lvl = 8;
+        lvl = 0;
         xp = 0;
         xpLimit = 10;
         time = 1;
