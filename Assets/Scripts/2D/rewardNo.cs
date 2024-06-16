@@ -10,43 +10,6 @@ public class rewardNo : MonoBehaviour
     public progression progression;
 
     public int rewardNumber;
-    public int gemCost;
-    public Text gemCostTxt;
-
-    private void Update()
-    {
-        gemCostTxt.text = "Buy for " + gemCost + " Gems";
-
-        if (rewardNumber == 1)
-        {
-            gemCost = 0;
-        }
-
-        if (rewardNumber == 2)
-        {
-            gemCost = 0;
-        }
-
-        if (rewardNumber == 3)
-        {
-            gemCost = 0;
-        }
-
-        if (rewardNumber == 4)
-        {
-            gemCost = 0;
-        }
-
-        if (rewardNumber == 5)
-        {
-            gemCost = 0;
-        }
-
-        if (rewardNumber == 6)
-        {
-            gemCost = 0;
-        }
-    }
 
     public void AcceptReward()
     {
@@ -56,14 +19,17 @@ public class rewardNo : MonoBehaviour
             playerStats.cornAmt = playerStats.cornAmt + 25;
             playerStats.riceAmt = playerStats.riceAmt + 25;
 
-            dailyRewards.reward1Accept.SetActive(false);
+            playerStats.coins += playerStats.coins + 50;
+
+
+            dailyRewards.reward1bool = true;
         }
 
         if (rewardNumber == 2)
         {
-            playerStats.coins += playerStats.coins + 250;
+            playerStats.coins += playerStats.coins + 450;
 
-            dailyRewards.reward2Accept.SetActive(false);
+            dailyRewards.reward2bool = true;
         }
 
         if (rewardNumber == 3)
@@ -71,21 +37,28 @@ public class rewardNo : MonoBehaviour
             playerStats.chickenAmt = playerStats.chickenAmt + 3;
             playerStats.cowAmt = playerStats.cowAmt + 2;
 
-            dailyRewards.reward3Accept.SetActive(false);
+            playerStats.coins += playerStats.coins + 200;
+
+            dailyRewards.reward3bool = true;
         }
 
         if (rewardNumber == 4)
         {
             playerStats.gems = playerStats.gems + 10;
 
-            dailyRewards.reward4Accept.SetActive(false);
+            playerStats.coins += playerStats.coins + 400;
+
+
+            dailyRewards.reward4bool = true;
         }
 
         if (rewardNumber == 5)
         {
             progression.toilet.SetActive(true);
 
-            dailyRewards.reward5Accept.SetActive(false);
+            playerStats.coins += playerStats.coins + 600;
+
+            dailyRewards.reward5bool = true;
         }
     }
 }

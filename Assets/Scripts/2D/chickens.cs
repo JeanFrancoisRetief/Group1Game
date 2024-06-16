@@ -23,6 +23,7 @@ public class chickens : MonoBehaviour
     public Text chickenUp1;
     public Text chickenUp2;
     public Text chickenUp3;
+    public GameObject chickenUp3GO;
     public Text chickenUp4;
     public Text chickenUp5;
     public GameObject chickenUp4GO;
@@ -55,7 +56,7 @@ public class chickens : MonoBehaviour
         eggsLaid = 1;
         chickenUpCost = 25;
         actualTimeToLay = 60f;
-        actualTimeToHatch = 90f;
+        actualTimeToHatch = 35f;
 
         GOInc.SetActive(false);
         collectBtn.SetActive(false);
@@ -83,6 +84,11 @@ public class chickens : MonoBehaviour
         }
         int minutes = Mathf.FloorToInt(timeToLay / 60);
         int seconds = Mathf.FloorToInt(timeToLay % 60);
+
+        if (actualTimeToLay <= 5f)
+        {
+            chickenUp3GO.SetActive(false);
+        }
 
         //upgrades
         chickenUp1.text = "Number of Chickens: +1";
@@ -215,6 +221,8 @@ public class chickens : MonoBehaviour
             {
                 timeToLay = actualTimeToLay;
             }
+
+            collectBtn.SetActive(false);
         }
     }
 

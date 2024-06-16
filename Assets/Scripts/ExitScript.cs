@@ -18,7 +18,7 @@ public class ExitScript : MonoBehaviour
         //Made a slight change here, when you press esc it takes you back to the main menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Main Menu");
+            Application.Quit();
         }
     }
 

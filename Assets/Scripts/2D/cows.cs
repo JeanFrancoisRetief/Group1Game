@@ -21,6 +21,7 @@ public class cows : MonoBehaviour
     public Text cowUp1;
     public Text cowUp2;
     public Text cowUp3;
+    public GameObject cowUp3GO;
     public Text cowUp4;
     public int cowUpCost;
     public Text cowUpCostTxt;
@@ -65,6 +66,11 @@ public class cows : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeToMilk / 60);
         int seconds = Mathf.FloorToInt(timeToMilk % 60);
         //timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        if (actualTimeToMilk <= 5f)
+        {
+            cowUp3GO.SetActive(false);
+        }
 
         cowUp1.text = "Number of Cows: +1";
         cowUp2.text = "Number of Milk Bottles Filled: +1";

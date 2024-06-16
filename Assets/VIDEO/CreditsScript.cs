@@ -33,7 +33,7 @@ public class CreditsScript : MonoBehaviour
         if(seconds >= 60)
         {
             //Debug.Log("Exit Program");
-            Application.Quit();
+            SceneManager.LoadScene("Main Menu");
         }
 
     }

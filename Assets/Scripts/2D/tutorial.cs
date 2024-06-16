@@ -93,7 +93,7 @@ public class tutorial : MonoBehaviour
 
         if (stringNo == 8)
         {
-            stgMrFarmsbury = "\tMr. Farmsbury\r\nOn the left, of the LEVEL BAR, is how much COINS and GEMS our- sorry, your farm has.";
+            stgMrFarmsbury = "\tMr. Farmsbury\r\nOn the right, of the LEVEL BAR, is how much COINS and GEMS our- sorry, your farm has.";
         }
 
         if (stringNo == 9)
@@ -165,7 +165,7 @@ public class tutorial : MonoBehaviour
         stringNo = 11;
 
         pnlTutorial.SetActive(true);
-        stgMrFarmsbury = "\tMr. Farmsbury\r\nHe wants 25 WHEAT.\r\nLet's go see how much you have. Exit the REQUEST MENU and press the RED button in the TOP RIGHT CORNER. This will show all your RESOURCES and how much of each you can hold.";
+        stgMrFarmsbury = "\tMr. Farmsbury\r\nHe wants 25 WHEAT.\r\nLet's go see how much you have. Exit the REQUEST MENU and press the RED button in the TOP LEFT CORNER. This will show all your RESOURCES and how much of each you can hold.";
     }
 
     public IEnumerator AfterOpenStats() 
